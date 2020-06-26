@@ -365,13 +365,8 @@ article
 
 @media all and (max-width: 500px)
 {
- .title_article
- {
-	font-size: 18px;
- }
-
  .icon_title
  {
-	font-size: 20px;
+	display: none;
  }	
 }
