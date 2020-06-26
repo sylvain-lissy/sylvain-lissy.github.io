@@ -229,7 +229,7 @@ article
 .detail_formation, .detail_expe_pro
 {
 	padding-left: 20px;
-	width:80%;
+	width:70%;
 }
 
 .recomm
@@ -338,7 +338,7 @@ article
     justify-content: center;
     padding-bottom: 0px;
   }
-  
+
   .title_article
   {
 	justify-content: center;
@@ -361,4 +361,17 @@ article
     flex-direction: column;
     text-align: center;
   }
+}
+
+@media all and (max-width: 500px)
+{
+ .title_article
+ {
+	font-size: 18px;
+ }
+
+ .icon_title
+ {
+	font-size: 20px;
+ }	
 }
