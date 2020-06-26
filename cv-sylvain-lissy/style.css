@@ -26,6 +26,7 @@ body
 {
 	font-family: 'AmbleRegular', sans-serif;
 	background-color: #282828;
+	margin: 0 auto;
 }
 
 /*TETE DE PAGE*/
@@ -60,7 +61,6 @@ header
 	height: 209px;
 	padding: 117px 65px 0px 65px;
 	background-color: white;
-
 }
 
 h1
@@ -255,7 +255,10 @@ article
 /* règles au format responsive avec les media queries */
 @media all and (max-width: 900px)
 {
-  
+  body{
+	margin: 0;
+  }
+
   header
   {
     width: auto;
