@@ -365,7 +365,11 @@ article
 
 @media all and (max-width: 500px)
 {
- 
+ .title_article
+ {
+	font-size: 17px;
+ }
+
  .icon_title
  {
 	display: none;
