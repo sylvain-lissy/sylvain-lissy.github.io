@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .vs/slnx.sqlite
 cv-sylvain-lissy/.vscode/launch.json
 cv-sylvain-lissy/index2.html
@@ -5,3 +6,10 @@ cv-sylvain-lissy/index2.html
 .vs/slnx.sqlite
 .vs/VSWorkspaceState.json
 .vs/slnx.sqlite
+=======
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+>>>>>>> 929d8544b8d1fd2290ff564e78582383c5938161
