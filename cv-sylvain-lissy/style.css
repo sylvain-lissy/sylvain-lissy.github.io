@@ -181,7 +181,7 @@ aside
 }
 
 /*CONTENU DE LA PAGE*/
-section
+article
 {
 	width: 800px;
 	height: 209;
@@ -229,7 +229,7 @@ section
 .detail_formation, .detail_expe_pro
 {
 	padding-left: 20px;
-	width:80%;
+	width:75%;
 }
 
 .recomm
@@ -253,8 +253,8 @@ section
 }
 
 
-/* rÃ¨gles au format responsive avec les media queries */
-@media all and (max-width: 800px)
+/* règles au format responsive avec les media queries */
+@media all and (max-width: 900px)
 {
   
   header
@@ -316,7 +316,7 @@ section
     padding-bottom: 30px;
   }
 
-  section
+  article
   {
     width: auto;
     margin: auto;
