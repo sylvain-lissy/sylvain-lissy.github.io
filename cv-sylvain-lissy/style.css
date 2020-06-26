@@ -254,7 +254,7 @@ article
 
 
 /* règles au format responsive avec les media queries */
-@media all and (max-width: 875px)
+@media all and (max-width: 900px)
 {
   
   header
@@ -368,7 +368,7 @@ article
 {
  .title_article
  {
-	font-size: 17px;
+	font-size: 15px;
  }
 
  .icon_title
