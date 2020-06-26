@@ -26,7 +26,7 @@ body
 {
 	font-family: 'AmbleRegular', sans-serif;
 	background-color: #282828;
-	margin: 0 auto;
+	margin: 0 auto 0 auto;
 }
 
 /*TETE DE PAGE*/
@@ -256,7 +256,7 @@ article
 @media all and (max-width: 900px)
 {
   body{
-	margin: 0;
+	margin: 0 0 0 0;
   }
 
   header
