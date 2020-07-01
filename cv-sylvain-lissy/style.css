@@ -163,9 +163,9 @@ aside
 
 #div_loisir
 {
-position: absolute;
-bottom:0;
-width: 100%;
+	position: absolute;
+	bottom:0;
+	width: 100%;
 
 }
 
@@ -222,7 +222,6 @@ article
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-
 }
 
 .date_formation, .date_expe_pro
@@ -272,7 +271,7 @@ article
   {
     width: auto;
     margin: auto;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   h2
@@ -293,6 +292,7 @@ article
   {
 	margin-top: 10px;
   }
+  
   .nom_cv:nth-child(2)
   {
     order: 1;
