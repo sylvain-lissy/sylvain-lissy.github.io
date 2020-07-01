@@ -101,6 +101,7 @@ aside
 	width: 400px;
 	background-color: #0080FF;
 	text-align: center;
+	position: relative;
 }
 
 .title_mnu
@@ -152,12 +153,20 @@ aside
 
 .apropos 
 {
-	padding-bottom: 600px;
+	/* padding-bottom: 600px; */
 }
 
 .apropos p
 {
 	text-align: justify;
+}
+
+#div_loisir
+{
+position: absolute;
+bottom:0;
+width: 100%;
+
 }
 
 .loisir
@@ -263,7 +272,7 @@ article
   {
     width: auto;
     margin: auto;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   h2
@@ -316,6 +325,11 @@ article
   .contact p
   {
     text-align: center;
+  }
+  
+  #div_loisir
+  {
+	position: relative;
   }
 
   .loisir
