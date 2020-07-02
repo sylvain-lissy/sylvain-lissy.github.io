@@ -304,9 +304,9 @@ article
     margin: auto;
   }
 
-  .apropos, .contact
+  .apropos, .contact, .loisir
   {
-    padding: 10px 0;
+    padding: 30px;
   }
 
   .contact p
@@ -317,11 +317,6 @@ article
   #div_loisir
   {
 	position: relative;
-  }
-
-  .loisir
-  {
-    padding: 30px 0;
   }
 
   article
@@ -355,7 +350,8 @@ article
 
   .detail_formation, .detail_expe_pro
   {
-    width: auto;
+	width: auto;
+	padding: 0 15px;
   }
   
   .recomm
