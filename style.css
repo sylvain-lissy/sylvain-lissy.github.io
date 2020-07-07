@@ -26,8 +26,8 @@ body
 {
 	font-family: 'AmbleRegular', sans-serif;
 	background-color: #282828;
-    margin: 0 auto 0 auto;
-    color:#282828;
+  margin: 0 auto 0 auto;
+  color:#282828;
 }
 
 /*TETE DE PAGE*/
@@ -36,72 +36,67 @@ header
 	width: 1000px;
 	display: flex;
 	justify-content: center;
-	margin: auto;
-}
-
-.github 
-{
-	/* width: 300px; */
-	/* height: 300px; */
-	background-color: #0080FF;
-	text-align: center;
-}
-
-.github img
-{
-	width: 212px;
-	/* height: 212px; */
-    /* margin-top: 68px; */
+  margin: auto;
 }
 
 .titre_page
 {
-	width: 700px;
+	width: 100%;
 	padding: 0 65px;
-    background-color: white;
-    text-align: center;
+  background-color: white;
+  text-align: center;
+  background-image: url(images/header.png);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14) , 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
 }
 
 h1
 {
-	color: #0080FF;
+	color: black;
 	font-size: 50px;
 }
 
 .color_nom
 {
-	color: #282828;
+	color: white;
 	font-weight: lighter;
 }
 
 header h2
 {
-	font-size: 35px;
+  font-size: 35px;
+  color: white;
 }
 
 .color_border{
-	border-bottom: 2px #0080FF solid;
+  border-bottom: 2px white solid;
+  color: black;
 }
 
 main
 {
-	width:1000px;
-	display: flex;
-    justify-content: space-around;
-    justify-items: center;
-    margin: auto;
-    background-color: white;
+  width:1000px;
+  height: 800px;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  margin: auto;
+  background-color: white;
+}
+
+article h2 
+{
+  text-decoration: underline;
 }
 
 footer
 {
 	width:1000px;
 	display: flex;
-    justify-content: space-around;
-    justify-items: center;
-    margin: auto;
-    background-color: white;
-    border-top: 1px #484848 dashed;
+  justify-content: space-around;
+  justify-items: center;
+  margin: auto;
+  background-color: white;
+  border-top: 1px #484848 dashed;
     
 }
 
@@ -109,14 +104,13 @@ footer
 @media all and (max-width: 900px)
 {
   body{
-	margin: 0 0 0 0;
+	  margin: 0 0 0 0;
   }
 
   header
   {
     width: auto;
     margin: auto;
-    flex-direction: column;
   }
 
   header h2
@@ -124,24 +118,10 @@ footer
     height: auto;
   }
 
-  .github:nth-child(1)
+  .titre_page
   {
-    order: 2;
-	width: auto;
-	height: auto;
-	padding: 10px;
-	 
-  }
-  
-  .github img
-  {
-	margin-top: 10px;
-  }
-  .titre_page:nth-child(2)
-  {
-    order: 1;
     width: auto;
-     margin: 0px;
+    margin: 0px;
     padding-bottom: 15px;
     padding-top: 10px; 
     text-align: center;
@@ -151,8 +131,10 @@ footer
   {
     flex-direction: column;
     width: auto;
+    height: auto;
     margin: auto;
     text-align: center;
   }
+
 
 }
