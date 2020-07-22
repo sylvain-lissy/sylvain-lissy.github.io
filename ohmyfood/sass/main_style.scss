@@ -1,44 +1,103 @@
+// TYPOGRAPHIE IMPORT FONTS // 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Devonshire&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
-@keyframes opacity {
+//VARIABLES ANIMATION LOADING //  
+$anim_btn_duree: 1000ms;
+$anim_btn_point : 3;
+$anim_btn_delay: $anim_btn_duree/$anim_btn_point;
+
+// ANIMATION LOADING (PROCHAINEMENT) //
+@keyframes anim_btn_opacity {
     0% {
         opacity: 0;
         animation-timing-function: cubic-bezier(.48,.24,.87,.6);
     }
-
     65% {
         opacity: 1;
         animation-timing-function: cubic-bezier(1,0,.99,.63);
     }
-
     100% {
         opacity: 0;
     }
 }
 
+// ANIMATION DES MENUS EN POP_OUT //
+@keyframes menu_pop_out_effect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.15);
+        opacity: 0.75;
+    }
+  }
+
+// EFFECT DE SECOUSSE 'WIGGLE' DU FOOTER //
+@keyframes footer_wiggle_effect {
+    0% {
+        transform: rotate(5deg);
+    }
+    20% {
+        transform: rotate(-5deg);
+    }
+    40% {
+        transform: rotate(5deg);
+    }
+    60% {
+        transform: rotate(-5deg);
+    }
+    80% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+// GRILLE PAGE PRINCIPALE //
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 600px 600px 150px;
-    gap: 3% 3%;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: 600px 600px 200px;
+    gap: 5% 10%;
     grid-template-areas: "menu_note menu_chic" "menu_delice menu_palette" "upcoming upcoming";
-  }
-  
-  .menu_note { grid-area: menu_note; }
-  .menu_chic { grid-area: menu_chic; }
-  .menu_delice { grid-area: menu_delice; }
-  .menu_palette { grid-area: menu_palette; }
-  .upcoming { grid-area: upcoming; }
+    justify-content: center;
+}
 
-
-$anim-duree: 1000ms;
-$nombre-point : 3;
-$anim-delay: $anim-duree/$nombre-point;
-
+// COULEURS DE BASE //
 $bg-color : #569c87;
 $txt-color: #FDCB46;
+// COULEURS DES MENUS //
+$clr_menu_note : #3D1319;
+$clr_menu_chic--1:#C67412;
+$clr_menu_chic--2:#A56799;
+$clr_menu_chic--3:#6E4CCC;
+$clr_menu_delice--1:#0228DD;
+$clr_menu_delice--2:#0670F3;
+$clr_menu_delice--3:#229DF9;
+$clr_menu_palette--1:#3D923A;
+$clr_menu_palette--2:#B8FA7C;
+// TYPOGRAPHIE //
 $fnt-header-footer: 'Montserrat';
-
+$fnt-note--1:'Devonshire';
+$fnt-note--2:'Itim';
+$fnt-chic--1:'Croissant One';
+$fnt-chic--2:'DM Serif Text';
+$fnt-delice--1:'Dancing Script';
+$fnt-delice--2:'Nanum Pen Script';
+$fnt-palette--1:'Kaushan Script';
+$fnt-palette--2:$fnt-delice--2;
+// STYLE PRINCIPAL POUR TOUTES LES PAGES //
 body {
     margin: 0;
     padding: 0;
@@ -50,7 +109,6 @@ body {
 header, footer{
     width:100%;
     background-color: $bg-color;
-    color: $txt-color;
     display: flex;
 }
 
@@ -61,8 +119,9 @@ header a, footer a{
 }
 
 header{
-    height:240px;
+    height:150px;
     justify-content: center;
+    align-items: center;
     & h1{
         font-size: 100px;
         letter-spacing: -6px;
@@ -72,29 +131,128 @@ header{
 main{
     margin: 5% 10%;
     padding: 0;
+}
+
+footer{
+    position:fixed;
+    height:50px;
+    bottom:0;
+    justify-content:space-between;
+    align-items: center;
+    & p{
+        margin: 10px;
+        font-size: 20px;
+        &:hover{
+            animation: footer_wiggle_effect 300ms ease-in-out 1;
+        }
+    }
+}
+
+// STYLE POUR L'AFFICHAGE MENU SUR PAGE PRINCIPALE //
+.menu_general {
+    box-shadow: 5px 5px 10px #999;
+    & a, section, span{
+    text-decoration: none;
+    }
+}
+.menu_animation{
+    width:400px;
+    height: 600px;
+    text-align: center;
     display: flex;
-    flex-wrap: wrap ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+    animation: menu_pop_out_effect 300ms ease-in both;
+    transform: scale(1);
+    }
 }
-
-
-.menu_general{
-    box-shadow: 5px 5px 10px #999999;
-}
+// Menu La note enchantée 
 .menu_note{
+    grid-area: menu_note;
+    display: flex;
+    justify-content: center;
     background-color: #FDE1DD;
+    color: $clr_menu_note ;
+    &--title{
+        font-family: $fnt-note--1;
+        font-size: 50px;
+    }
+    &--menu{
+        font-family: $fnt-note--2;
+        font-size: 50px;
+        font-style: italic;
+        text-transform: uppercase;
+    }
 }
+
+// Menu Le chic à la française
 .menu_chic{
+    grid-area: menu_chic;
+    display: flex;
+    justify-content: center;
     background-color: #FFF5FE;
+    &--title{
+        font-family: $fnt-chic--1;
+        font-size: 30px;
+        background: -webkit-linear-gradient(100deg,$clr_menu_chic--3,$clr_menu_chic--2,$clr_menu_chic--1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+    &--menu{
+        font-family: $fnt-chic--2;
+        font-size: 60px;
+        color:$clr_menu_chic--1;
+
+    }
 }
+
+// Menu Le délice des papilles
 .menu_delice{
+    grid-area: menu_delice;
+    display: flex;
+    justify-content: center;
     background-color: #F9F9F9;    
+    &--title{
+        font-family: $fnt-delice--1;
+        font-size: 40px;
+        background: -webkit-linear-gradient(110deg,$clr_menu_delice--3,$clr_menu_delice--2,$clr_menu_delice--1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+    &--menu{
+        font-family: $fnt-delice--2;
+        font-size: 60px;
+        font-style: italic;
+        color:$clr_menu_delice--3;
+    }
 }
+
+// Menu La palette du goût
 .menu_palette{  
+    grid-area: menu_palette;
+    display: flex;
+    justify-content: center;
     background-color: #FDFFFD;
+    &--title{
+        font-family: $fnt-palette--1;
+        font-size: 40px;
+        background: -webkit-linear-gradient(110deg,$clr_menu_palette--2,$clr_menu_palette--1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+    &--menu{
+        font-family: $fnt-palette--2;
+        font-size: 60px;
+        font-style: italic;
+        color:$clr_menu_palette--2;
+    }
 }
 
-
+// MENU PROCHAINEMENT //
 .upcoming{
+    grid-area: upcoming;
     display: flex;
     justify-content: center;
     &--content{
@@ -109,14 +267,7 @@ main{
         align-items: center;
         justify-content: center;
         &__txt{
-            padding: 0;
-            margin: 0;
-            height: 50px;
             font-size: 25px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
             font-family: $fnt-header-footer; 
         }
         &__loading{
@@ -125,26 +276,13 @@ main{
             height: 5px;
             border-radius: 50%;
             background-color: $txt-color;
-            animation: opacity $anim-duree cubic-bezier(.74, .32, .53, .76) backwards infinite;
+            animation: anim_btn_opacity $anim_btn_duree cubic-bezier(.74, .32, .53, .76) backwards infinite;
 
             @for $i from 1 through 3 {
                 &--#{$i} {
-                    animation-delay: ($anim-delay/4)-250+($i*250);
+                    animation-delay: ($anim_btn_delay/4)-250+($i*250);
                 }
             }
         }
-    }
-}
-
-footer{
-    position:fixed;
-    height:60px;
-    bottom:0;
-    justify-content:space-between;
-    align-items: center;
-    & p{
-        margin: 15px;
-        font-size: 25px;
-        font-weight: bolder;
     }
 }
