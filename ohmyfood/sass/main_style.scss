@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+        animation-timing-function: cubic-bezier(.48,.24,.87,.6);
+    }
+
+    65% {
+        opacity: 1;
+        animation-timing-function: cubic-bezier(1,0,.99,.63);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 600px 600px 150px;
+    gap: 3% 3%;
+    grid-template-areas: "menu_note menu_chic" "menu_delice menu_palette" "upcoming upcoming";
+  }
+  
+  .menu_note { grid-area: menu_note; }
+  .menu_chic { grid-area: menu_chic; }
+  .menu_delice { grid-area: menu_delice; }
+  .menu_palette { grid-area: menu_palette; }
+  .upcoming { grid-area: upcoming; }
+
+
+$anim-duree: 1000ms;
+$nombre-point : 3;
+$anim-delay: $anim-duree/$nombre-point;
+
+$bg-color : #569c87;
+$txt-color: #FDCB46;
+$fnt-header-footer: 'Montserrat';
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer{
+    width:100%;
+    background-color: $bg-color;
+    color: $txt-color;
+    display: flex;
+}
+
+header a, footer a{
+    color:$txt-color;
+    text-decoration: none;
+    font-family:$fnt-header-footer;
+}
+
+header{
+    height:240px;
+    justify-content: center;
+    & h1{
+        font-size: 100px;
+        letter-spacing: -6px;
+    }
+}
+
+main{
+    margin: 5% 10%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+
+.menu_general{
+    box-shadow: 5px 5px 10px #999999;
+}
+.menu_note{
+    background-color: #FDE1DD;
+}
+.menu_chic{
+    background-color: #FFF5FE;
+}
+.menu_delice{
+    background-color: #F9F9F9;    
+}
+.menu_palette{  
+    background-color: #FDFFFD;
+}
+
+
+.upcoming{
+    display: flex;
+    justify-content: center;
+    &--content{
+        width:270px;
+        height: 50px;
+        background-color: $bg-color;
+        color: $txt-color;
+        text-align: center;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        &__txt{
+            padding: 0;
+            margin: 0;
+            height: 50px;
+            font-size: 25px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            font-family: $fnt-header-footer; 
+        }
+        &__loading{
+            margin: 12px 0 0 6px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: $txt-color;
+            animation: opacity $anim-duree cubic-bezier(.74, .32, .53, .76) backwards infinite;
+
+            @for $i from 1 through 3 {
+                &--#{$i} {
+                    animation-delay: ($anim-delay/4)-250+($i*250);
+                }
+            }
+        }
+    }
+}
+
+footer{
+    position:fixed;
+    height:60px;
+    bottom:0;
+    justify-content:space-between;
+    align-items: center;
+    & p{
+        margin: 15px;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+}

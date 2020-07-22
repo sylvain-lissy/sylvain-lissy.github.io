@@ -1,0 +1,11 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Site commercial de Oh my food",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main_style.scss:./css/main_style.css --style expanded","prefix": "postcss ./css/main_style.css --use autoprefixer -d ./css/prefixed/"},
+  "author": "LISSY Sylvain",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}

@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Montserrat-Regular.ttf") format("ttf");
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header, footer {
+  width: 100%;
+  background-color: #569c87;
+  color: #FDCB46;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header a, footer a {
+  color: #FDCB46;
+  text-decoration: none;
+  font-family: Montserrat-Regular;
+}
+
+header {
+  height: 240px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header h1 {
+  font-size: 100px;
+}
+
+main {
+  margin: 10px;
+  padding: 0;
+}
+
+footer {
+  position: fixed;
+  height: 60px;
+  bottom: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer p {
+  margin: 10px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3Nhc3MvbWFpbl9zdHlsZS5zY3NzIiwiLi4vbWFpbl9zdHlsZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxpQ0FBQTtFQUNBLGtCQUFBO0VBQ0gsbUJBQUE7RUFDQSxzREFBQTtBQ0NEO0FET0E7RUFDSSxTQUFBO0VBQ0EsVUFBQTtFQUNBLHVCQUFBO0VBQ0Esb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSw0QkFBQTtFQUFBLDZCQUFBO01BQUEsMEJBQUE7VUFBQSxzQkFBQTtBQ0xKOztBRFFBO0VBQ0ksV0FBQTtFQUNBLHlCQWRRO0VBZVIsY0FkUTtFQWVSLG9CQUFBO0VBQUEsb0JBQUE7RUFBQSxhQUFBO0FDTEo7O0FEUUE7RUFDSSxjQW5CUTtFQW9CUixxQkFBQTtFQUNBLCtCQXBCZ0I7QUNlcEI7O0FEUUE7RUFDSSxhQUFBO0VBQ0Esd0JBQUE7TUFBQSxxQkFBQTtVQUFBLHVCQUFBO0FDTEo7QURNSTtFQUNJLGdCQUFBO0FDSlI7O0FEUUE7RUFDSSxZQUFBO0VBQ0EsVUFBQTtBQ0xKOztBRFFBO0VBQ0ksZUFBQTtFQUNBLFlBQUE7RUFDQSxTQUFBO0VBQ0EseUJBQUE7TUFBQSxzQkFBQTtVQUFBLDhCQUFBO0VBQ0EseUJBQUE7TUFBQSxzQkFBQTtVQUFBLG1CQUFBO0FDTEo7QURNSTtFQUNJLFlBQUE7RUFDQSxlQUFBO0VBQ0EsbUJBQUE7QUNKUiIsImZpbGUiOiJtYWluX3N0eWxlLmNzcyJ9 */
