@@ -1,17 +1,6 @@
-// TYPOGRAPHIE IMPORT FONTS // 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Devonshire&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import "./utils/variables";
 
-//VARIABLES ANIMATION LOADING //  
-$anim_btn_duree: 1000ms;
-$anim_btn_point : 3;
-$anim_btn_delay: $anim_btn_duree/$anim_btn_point;
+@import "./base/fonts";
 
 // ANIMATION LOADING (PROCHAINEMENT) //
 @keyframes anim_btn_opacity {
