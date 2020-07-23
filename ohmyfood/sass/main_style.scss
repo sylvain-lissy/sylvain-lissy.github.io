@@ -4,6 +4,10 @@
 
 @import "./components/animations";
 
+
+@import "./pages/general";
+
+
 // GRILLE PAGE PRINCIPALE //
 .grid-container {
     display: grid;
@@ -12,58 +16,6 @@
     gap: 5% 10%;
     grid-template-areas: "menu_note menu_chic" "menu_delice menu_palette" "upcoming upcoming";
     justify-content: center;
-}
-
-
-// STYLE PRINCIPAL POUR TOUTES LES PAGES //
-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-}
-
-header, footer{
-    width:100%;
-    background-color: $bg-color;
-    display: flex;
-}
-
-header a, footer a{
-    color:$txt-color;
-    text-decoration: none;
-    font-family:$fnt-header-footer;
-}
-
-header{
-    height:150px;
-    justify-content: center;
-    align-items: center;
-    & h1{
-        font-size: 100px;
-        letter-spacing: -6px;
-    }
-}
-
-main{
-    margin: 5% 10%;
-    padding: 0;
-}
-
-footer{
-    position:fixed;
-    height:50px;
-    bottom:0;
-    justify-content:space-between;
-    align-items: center;
-    & p{
-        margin: 10px;
-        font-size: 20px;
-        &:hover{
-            animation: footer_wiggle_effect 300ms ease-in-out 1;
-        }
-    }
 }
 
 // STYLE POUR L'AFFICHAGE MENU SUR PAGE PRINCIPALE //
