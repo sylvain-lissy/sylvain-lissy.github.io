@@ -2,56 +2,7 @@
 
 @import "./base/fonts";
 
-// ANIMATION LOADING (PROCHAINEMENT) //
-@keyframes anim_btn_opacity {
-    0% {
-        opacity: 0;
-        animation-timing-function: cubic-bezier(.48,.24,.87,.6);
-    }
-    65% {
-        opacity: 1;
-        animation-timing-function: cubic-bezier(1,0,.99,.63);
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-// ANIMATION DES MENUS EN POP_OUT //
-@keyframes menu_pop_out_effect {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1.15);
-        opacity: 0.75;
-    }
-  }
-
-// EFFECT DE SECOUSSE 'WIGGLE' DU FOOTER //
-@keyframes footer_wiggle_effect {
-    0% {
-        transform: rotate(5deg);
-    }
-    20% {
-        transform: rotate(-5deg);
-    }
-    40% {
-        transform: rotate(5deg);
-    }
-    60% {
-        transform: rotate(-5deg);
-    }
-    80% {
-        transform: rotate(5deg);
-    }
-    100% {
-        transform: rotate(-5deg);
-    }
-}
+@import "./components/animations";
 
 // GRILLE PAGE PRINCIPALE //
 .grid-container {
@@ -63,29 +14,7 @@
     justify-content: center;
 }
 
-// COULEURS DE BASE //
-$bg-color : #569c87;
-$txt-color: #FDCB46;
-// COULEURS DES MENUS //
-$clr_menu_note : #3D1319;
-$clr_menu_chic--1:#C67412;
-$clr_menu_chic--2:#A56799;
-$clr_menu_chic--3:#6E4CCC;
-$clr_menu_delice--1:#0228DD;
-$clr_menu_delice--2:#0670F3;
-$clr_menu_delice--3:#229DF9;
-$clr_menu_palette--1:#3D923A;
-$clr_menu_palette--2:#B8FA7C;
-// TYPOGRAPHIE //
-$fnt-header-footer: 'Montserrat';
-$fnt-note--1:'Devonshire';
-$fnt-note--2:'Itim';
-$fnt-chic--1:'Croissant One';
-$fnt-chic--2:'DM Serif Text';
-$fnt-delice--1:'Dancing Script';
-$fnt-delice--2:'Nanum Pen Script';
-$fnt-palette--1:'Kaushan Script';
-$fnt-palette--2:$fnt-delice--2;
+
 // STYLE PRINCIPAL POUR TOUTES LES PAGES //
 body {
     margin: 0;

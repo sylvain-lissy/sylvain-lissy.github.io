@@ -2,3 +2,36 @@
 $anim_btn_duree: 1000ms;
 $anim_btn_point : 3;
 $anim_btn_delay: $anim_btn_duree/$anim_btn_point;
+
+// COULEURS DE BASE //
+$bg-color : #569c87;
+$txt-color: #FDCB46;
+
+// COULEURS DES MENUS //
+$clr_menu_note : #3D1319;
+
+$clr_menu_chic--1:#C67412;
+$clr_menu_chic--2:#A56799;
+$clr_menu_chic--3:#6E4CCC;
+
+$clr_menu_delice--1:#0228DD;
+$clr_menu_delice--2:#0670F3;
+$clr_menu_delice--3:#229DF9;
+
+$clr_menu_palette--1:#3D923A;
+$clr_menu_palette--2:#B8FA7C;
+
+// TYPOGRAPHIE //
+$fnt-header-footer: 'Montserrat';
+
+$fnt-note--1:'Devonshire';
+$fnt-note--2:'Itim';
+
+$fnt-chic--1:'Croissant One';
+$fnt-chic--2:'DM Serif Text';
+
+$fnt-delice--1:'Dancing Script';
+$fnt-delice--2:'Nanum Pen Script';
+
+$fnt-palette--1:'Kaushan Script';
+$fnt-palette--2:$fnt-delice--2;

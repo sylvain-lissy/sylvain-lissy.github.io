@@ -1,0 +1,50 @@
+// ANIMATION LOADING (PROCHAINEMENT) //
+@keyframes anim_btn_opacity {
+    0% {
+        opacity: 0;
+        animation-timing-function: cubic-bezier(.48,.24,.87,.6);
+    }
+    65% {
+        opacity: 1;
+        animation-timing-function: cubic-bezier(1,0,.99,.63);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+// ANIMATION DES MENUS EN POP_OUT //
+@keyframes menu_pop_out_effect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.15);
+        opacity: 0.75;
+    }
+  }
+
+// EFFECT DE SECOUSSE 'WIGGLE' DU FOOTER //
+@keyframes footer_wiggle_effect {
+    0% {
+        transform: rotate(5deg);
+    }
+    20% {
+        transform: rotate(-5deg);
+    }
+    40% {
+        transform: rotate(5deg);
+    }
+    60% {
+        transform: rotate(-5deg);
+    }
+    80% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
