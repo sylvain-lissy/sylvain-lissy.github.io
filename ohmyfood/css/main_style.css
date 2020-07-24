@@ -51,21 +51,13 @@
     transform: rotate(-5deg);
   }
 }
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 400px);
-  grid-template-rows: 600px 600px 200px;
-  gap: 5% 10%;
-  grid-template-areas: "menu_note menu_chic" "menu_delice menu_palette" "upcoming upcoming";
-  justify-content: center;
-}
-
 body {
   margin: 0;
   padding: 0;
   background-color: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 header, footer {
@@ -110,11 +102,20 @@ footer p:hover {
   animation: footer_wiggle_effect 300ms ease-in-out 1;
 }
 
-.menu_general {
-  box-shadow: 5px 5px 10px #999;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: 600px 600px 200px;
+  gap: 5% 10%;
+  grid-template-areas: "menu_note menu_chic" "menu_delice menu_palette" "upcoming upcoming";
+  justify-content: center;
 }
+
 .menu_general a, .menu_general section, .menu_general span {
   text-decoration: none;
+}
+.menu_general a {
+  box-shadow: 5px 5px 10px #999;
 }
 
 .menu_animation {
@@ -245,6 +246,96 @@ footer p:hover {
 }
 .upcoming--content__loading--3 {
   animation-delay: 583.3333333333ms;
+}
+
+.legal__main {
+  width: 60%;
+  background-color: #EEE;
+  font-family: "Montserrat";
+  box-shadow: 0 0 10px #999;
+}
+.legal__main--section {
+  margin: 10px;
+  padding: 10px;
+}
+.legal__main section {
+  color: #444;
+}
+.legal__main section h2 {
+  color: #569c87;
+  font-size: 50px;
+  text-align: center;
+}
+.legal__main section h3 {
+  color: #569c87;
+  font-size: 30px;
+  text-decoration: underline;
+}
+.legal__main section a {
+  color: #FDCB46;
+  text-decoration: none;
+  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 5%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.legal__main section a:hover {
+  background-size: 100% 100%;
+}
+.legal__main section strong {
+  text-decoration: underline;
+}
+.legal__main section p {
+  text-align: justify;
+}
+.legal__main section span {
+  font-style: italic;
+}
+
+.note__main {
+  width: 80%;
+  margin: auto;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.note__main--title {
+  font-family: "Montserrat";
+  font-size: 30px;
+}
+.note__main--section {
+  margin: 3%;
+  padding: 3%;
+  background-color: #FDE1DD;
+  box-shadow: 0 0 10px #999;
+  width: 70%;
+}
+.note__main section h3, .note__main section img {
+  font-family: "Devonshire";
+  color: #3D1319;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.note__main section a {
+  color: #FDCB46;
+  text-decoration: none;
+  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 5%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.note__main section a:hover {
+  background-size: 100% 100%;
+}
+.note__main section strong {
+  text-decoration: underline;
+}
+.note__main section p {
+  text-align: justify;
+}
+.note__main section span {
+  font-style: italic;
 }
 
 /*# sourceMappingURL=main_style.css.map */

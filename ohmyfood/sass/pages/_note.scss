@@ -1,0 +1,53 @@
+.note{
+    &__main{
+        width:80%;
+        margin: auto;
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &--title{
+            font-family: $fnt-header-footer;
+            font-size: 30px;
+        }
+        &--section{
+            margin: 3%;
+            padding: 3%;
+            background-color: $clr_menu_note--bg;
+            //color: $clr_menu_note--1;
+            box-shadow: 0 0 10px #999;
+            width: 70%;
+        }
+        & section{
+            & h3, img{
+                font-family: $fnt-note--1;
+                color: $clr_menu_note--1;
+                font-size:  50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            & a{
+                color:$txt_color;
+                text-decoration: none;
+                background: linear-gradient(to top, $txt_color 0%, $txt_color 5%, transparent 1%) no-repeat left bottom / 0 100%;
+                transition: background-size .5s;
+                &:hover{
+                    background-size: 100% 100%;
+                }           
+            }
+            & strong{
+                text-decoration: underline;
+            }
+            & p{
+                text-align: justify;
+            }
+            & span{
+                    font-style: italic;
+        
+            }
+        }
+    }
+}

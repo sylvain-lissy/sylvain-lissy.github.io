@@ -8,16 +8,20 @@ $bg-color : #569c87;
 $txt-color: #FDCB46;
 
 // COULEURS DES MENUS //
-$clr_menu_note : #3D1319;
+$clr_menu_note--bg :#FDE1DD;
+$clr_menu_note--1 : #3D1319;
 
+$clr_menu_chic--bg:#FFF5FE;
 $clr_menu_chic--1:#C67412;
 $clr_menu_chic--2:#A56799;
 $clr_menu_chic--3:#6E4CCC;
 
+$clr_menu_delice--bg:#F9F9F9;
 $clr_menu_delice--1:#0228DD;
 $clr_menu_delice--2:#0670F3;
 $clr_menu_delice--3:#229DF9;
 
+$clr_menu_palette--bg: #FDFFFD;
 $clr_menu_palette--1:#3D923A;
 $clr_menu_palette--2:#B8FA7C;
 
@@ -35,3 +39,8 @@ $fnt-delice--2:'Nanum Pen Script';
 
 $fnt-palette--1:'Kaushan Script';
 $fnt-palette--2:$fnt-delice--2;
+
+
+//COULEURS MENTIONS LEGALES//
+$clr_mention--bg:#EEE;
+$clr_mention--txt:#444;

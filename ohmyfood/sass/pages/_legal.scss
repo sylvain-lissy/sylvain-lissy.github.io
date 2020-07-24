@@ -1,0 +1,44 @@
+.legal{
+    &__main{
+        width:60%;
+        background-color: $clr_mention--bg;
+        font-family: $fnt-header-footer;
+        box-shadow: 0 0 10px #999;
+        &--section{
+            margin: 10px;
+            padding: 10px;
+        }
+        & section{
+        color:$clr_mention--txt;
+            & h2{
+                color:$bg_color;
+                font-size: 50px;
+                text-align: center;
+            }
+            & h3{
+                color:$bg_color;
+                font-size: 30px;
+                text-decoration: underline;
+            }
+            & a{
+                color:$txt_color;
+                text-decoration: none;
+                background: linear-gradient(to top, $txt_color 0%, $txt_color 5%, transparent 1%) no-repeat left bottom / 0 100%;
+                transition: background-size .5s;
+                &:hover{
+                    background-size: 100% 100%;
+                }           
+            }
+            & strong{
+                text-decoration: underline;
+            }
+            & p{
+                text-align: justify;
+            }
+            & span{
+                    font-style: italic;
+        
+            }
+        }
+    }
+}
