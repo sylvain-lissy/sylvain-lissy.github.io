@@ -292,8 +292,6 @@ footer p:hover {
 
 .note__main {
   width: 80%;
-  margin: auto;
-  padding: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -310,32 +308,145 @@ footer p:hover {
   box-shadow: 0 0 10px #999;
   width: 70%;
 }
-.note__main section h3, .note__main section img {
+.note__main section .menu_title h3, .note__main section .menu_title img {
   font-family: "Devonshire";
   color: #3D1319;
   font-size: 50px;
+  font-weight: normal;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  margin: auto;
 }
-.note__main section a {
-  color: #FDCB46;
-  text-decoration: none;
-  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 5%, transparent 1%) no-repeat left bottom/0 100%;
+.note__main section .menu_part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.note__main section .menu_part--title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.note__main section .menu_part--title img {
+  width: 25%;
+  margin: 0 20px;
+}
+.note__main section .menu_part h4 {
+  font-family: "Itim";
+  color: #3D1319;
+  font-size: 35px;
+  text-align: center;
+  background: linear-gradient(to top, #3D1319 0%, #3D1319 5%, transparent 1%) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
 }
-.note__main section a:hover {
+.note__main section .menu_part h4:hover {
   background-size: 100% 100%;
 }
-.note__main section strong {
-  text-decoration: underline;
+.note__main section .menu_part--content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  font-family: "Itim";
+  color: #3D1319;
+  font-size: 20px;
 }
-.note__main section p {
-  text-align: justify;
+.note__main section .menu_part--content .plat {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 70%;
+  text-align: left;
+  margin-left: 20px;
 }
-.note__main section span {
-  font-style: italic;
+.note__main section .menu_part--content .prix {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 20%;
+  margin-right: 20px;
+}
+.note__main section .menu_part--content .dessert {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 90%;
+  text-align: left;
+  margin-left: 20px;
+}
+.note__main section .menu_footer {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+.note__main section .menu_footer h3 {
+  font-family: "Devonshire";
+  color: #3D1319;
+  font-size: 40px;
+  padding-left: 10px;
+  font-weight: normal;
+}
+.note__main section .menu_footer img {
+  width: 10%;
+}
+
+.menu_titre {
+  font-family: "Montserrat";
+  font-size: 30px;
+}
+
+.menu_chic_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+.menu_chic_contenu {
+  margin: 3%;
+  padding: 3%;
+  background-color: #FFF5FE;
+  box-shadow: 0 0 10px #999;
+  width: 70%;
+}
+.menu_chic_titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Croissant One";
+  background: -webkit-linear-gradient(100deg, #6E4CCC, #A56799, #C67412);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  font-weight: normal;
+}
+.menu_chic_entree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Serif Text";
+  font-size: 30px;
+}
+.menu_chic_entree--titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #C67412;
+  text-decoration: none;
+  background: linear-gradient(to top, #C67412 0%, #C67412 10%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.menu_chic_entree--titre h4:hover {
+  background-size: 100% 100%;
 }
 
 /*# sourceMappingURL=main_style.css.map */

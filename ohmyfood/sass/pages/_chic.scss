@@ -1,0 +1,147 @@
+.menu_titre{
+    font-family: $fnt-header-footer;
+    font-size: 30px;
+}
+.menu_chic{
+    &_main{
+        @include Center_elements($Direction:column);
+        width:80%;
+
+    }
+    &_contenu{
+        margin: 3%;
+        padding: 3%;
+        background-color: $clr_menu_chic--bg;
+        box-shadow: 0 0 10px #999;
+        width: 70%;
+    }
+    &_titre{
+        @include Center_elements;
+        font-family: $fnt-chic--1;
+        background: -webkit-linear-gradient(100deg,$clr_menu_chic--3,$clr_menu_chic--2,$clr_menu_chic--1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        font-size:  50px;
+        font-weight: normal;
+    }
+    &_entree{
+        @include Center_elements($Direction:column);
+        font-family: $fnt-chic--2;
+        font-size:  30px;
+        &--titre{
+            @include Center_elements($Justify:space-between);
+            width:100%;
+            color: $clr_menu_chic--1;
+    
+/////////////////////// REPRENDRE POUR LE SOULIGNEMENT INTERACTIF ///////////////////////////////////////            
+        
+            @include Underline ($clr_menu_chic--1);
+            & h4:hover{
+                background-size: 100% 100%;
+            }
+        }
+    }
+}
+
+
+
+// .chic{
+//     &__main{{#
+//         width:80%;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: center;
+//         &--title{
+//             font-family: $fnt-header-footer;
+//             font-size: 30px;
+//         }
+//         &--section{
+//             margin: 3%;
+//             padding: 3%;
+//             background-color: $clr_menu_chic--bg;
+//             box-shadow: 0 0 10px #999;
+//             width: 70%;
+//         }
+//         & section{
+//             & .menu_title{
+//                 & h3, img{
+//                 font-family: $fnt-chic--1;
+//                 background: -webkit-linear-gradient(100deg,$clr_menu_chic--3,$clr_menu_chic--2,$clr_menu_chic--1);
+//                     -webkit-background-clip: text;
+//                     -webkit-text-fill-color: transparent;
+//                 font-size:  50px;
+//                 font-weight: normal;
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//                 margin: auto;      
+//                 }
+//             }
+//             & .menu_part{
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//                 justify-content: center;
+//                 &--title{
+//                     display: flex;
+//                     flex-direction: row;
+//                     justify-content: space-between;
+//                     align-items: center;
+//                     width:100%;
+//                     & img{
+//                         width: 25%;
+//                         height: fit-content ;
+//                         margin: 0 20px;
+//                     }
+//                 }
+//                 & h4 {
+//                     font-family: $fnt-chic--2;
+//                     color: $clr_menu_chic--1;
+//                     font-size: 30px;
+//                     text-align: center;
+//                     background: linear-gradient(to top, $clr_menu_chic--1 0%, $clr_menu_chic--1 5%, transparent 1%) no-repeat left bottom / 0 100%;
+//                     transition: background-size .5s;
+//                     &:hover{
+//                         background-size: 100% 100%;
+//                     }
+//                 }
+//                 &--content{
+//                     display: flex;
+//                     flex-direction: row;
+//                     align-items: center;
+//                     justify-content: center;
+//                     flex-wrap: wrap;
+//                     width:100%;
+//                     font-family: $fnt-chic--2;
+//                     color: $clr_menu_chic--1;
+//                     font-size: 20px;
+//                     & .plat{
+//                         display: flex;
+//                         flex-direction: row;
+//                         justify-content: flex-start;
+//                         width: 70%;
+//                         text-align: left;
+//                         margin-left :20px; 
+//                     }
+//                     & .prix{
+//                         display: flex;
+//                         flex-direction: row;
+//                         justify-content: flex-end;
+//                         width: 20%;
+//                         margin-right: 20px;
+//                     }
+//                     & .dessert{
+//                         display: flex;
+//                         flex-direction: row;
+//                         justify-content: flex-start;
+//                         width: 90%;
+//                         text-align: left;
+//                         margin-left :20px; 
+//                     }
+//                 }
+//             }
+            
+//         }
+//     }
+// }

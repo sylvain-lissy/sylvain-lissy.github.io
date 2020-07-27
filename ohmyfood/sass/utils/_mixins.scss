@@ -1,0 +1,20 @@
+@mixin Center_elements($Align: center,$Justify: center, $Direction: row) {
+    display: flex;
+    flex-direction: $Direction;
+    align-items: $Align;
+    justify-content: $Justify;
+}
+
+@mixin Underline($couleursoulignement) {
+    text-decoration: none;
+    background: linear-gradient(to top, $couleursoulignement 0%, $couleursoulignement 10%, transparent 1%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+}
+
+
+@mixin Menu_Gradient($colorA: #000, $colorB: #000) {
+    background: $colorA;
+    background: linear-gradient(125deg, $colorA 0%, $colorB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
