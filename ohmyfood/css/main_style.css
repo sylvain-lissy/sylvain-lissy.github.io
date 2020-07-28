@@ -541,7 +541,7 @@ footer p:hover {
   transition: background-size 0.5s;
 }
 .menu_chic_dessert--titre h4:hover {
-  background: 100% 100%;
+  background-size: 100% 100%;
 }
 .menu_chic_dessert--titre img {
   width: 30%;

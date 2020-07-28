@@ -100,7 +100,7 @@
             width:100%;
             color: $clr_menu_chic--3;
             & h4{
-                @include Underline ($clr_menu_chic--2);
+                @include Underline ($clr_menu_chic--3);
                 &:hover{
                     background-size: 100% 100%;
                 }
