@@ -38,10 +38,12 @@
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
-                    width:100%;
+                    align-items: center;
+                    width:90%;
                     & img{
-                        width: 25%;
-                        margin: 0 20px;
+                        width: 20%;
+                        height:20%;
+                        //margin: 0 20px;
                     }
                 }
                 & h4 {
@@ -93,6 +95,7 @@
             & .menu_footer{
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 margin: 5%;      
                 & h3{
                     font-family: $fnt-note--1;
@@ -102,7 +105,8 @@
                     font-weight: normal;
                 }
                 & img{
-                    width: 10%;
+                    width: 7%;
+                    height:7%;
                 }
             } 
         }

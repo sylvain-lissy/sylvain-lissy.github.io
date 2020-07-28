@@ -2,7 +2,7 @@
     font-family: $fnt-header-footer;
     font-size: 30px;
 }
-.menu_delice{
+.menu_palette{
     &_main{
         @include Center_elements($Direction:column);
         width:80%;
@@ -10,21 +10,21 @@
     &_contenu{
         margin: 3%;
         padding: 3%;
-        background-color: $clr_menu_delice--bg;
+        background-color: $clr_menu_palette--bg;
         box-shadow: 0 0 10px #999;
         width: 70%;
     }
     &_titre{
         @include Center_elements;
-        font-family: $fnt-delice--1;
-        background: -webkit-linear-gradient(100deg,$clr_menu_delice--3,$clr_menu_delice--2,$clr_menu_delice--1);
+        font-family: $fnt-palette--1;
+        background: -webkit-linear-gradient(110deg,$clr_menu_palette--3 30%, $clr_menu_palette--1 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         font-size:  70px;
     }
     &_entree{
         @include Center_elements($Direction:column);
-        font-family: $fnt-delice--2;
+        font-family: $fnt-palette--2;
         font-size:  38px;
         padding: 5% 0;
         &--titre{
@@ -32,7 +32,7 @@
             width:100%;
             color: $txt-basic;
             & h4{
-                @include Underline ($clr_menu_delice--1);
+                @include Underline ($clr_menu_palette--1);
                 &:hover{
                     background-size: 100% 100%;
                 }
@@ -59,7 +59,7 @@
     }
     &_plat{
         @include Center_elements($Direction:column);
-        font-family: $fnt-delice--2;
+        font-family: $fnt-palette--2;
         font-size:  38px;
         padding: 5% 0;
         &--titre{
@@ -67,7 +67,7 @@
             width:100%;
             color: $txt-basic;
             & h4{
-                @include Underline ($clr_menu_delice--2);
+                @include Underline ($clr_menu_palette--2);
                 &:hover{
                     background-size: 100% 100%;
                 }
@@ -95,7 +95,7 @@
     }
     &_dessert{
         @include Center_elements($Direction:column);
-        font-family: $fnt-delice--2;
+        font-family: $fnt-palette--2;
         font-size:  38px;
         padding: 5% 0;
         &--titre{
@@ -103,7 +103,7 @@
             width:100%;
             color: $txt-basic;
             & h4{
-                @include Underline ($clr_menu_delice--3);
+                @include Underline ($clr_menu_palette--3);
                 &:hover{
                     background-size: 100% 100%;
                 }

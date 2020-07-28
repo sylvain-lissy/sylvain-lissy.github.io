@@ -6,6 +6,7 @@ $anim_btn_delay: $anim_btn_duree/$anim_btn_point;
 // COULEURS DE BASE //
 $bg-color : #569c87;
 $txt-color: #FDCB46;
+$txt-basic: #000000;
 
 // COULEURS DES MENUS //
 $clr_menu_note--bg :#FDE1DD;
@@ -23,7 +24,8 @@ $clr_menu_delice--3:#229DF9;
 
 $clr_menu_palette--bg: #FDFFFD;
 $clr_menu_palette--1:#3D923A;
-$clr_menu_palette--2:#B8FA7C;
+$clr_menu_palette--2:#8DD565;
+$clr_menu_palette--3:#B8FA7C;
 
 // TYPOGRAPHIE //
 $fnt-header-footer: 'Montserrat';
@@ -35,7 +37,7 @@ $fnt-chic--1:'Croissant One';
 $fnt-chic--2:'DM Serif Text';
 
 $fnt-delice--1:'Dancing Script';
-$fnt-delice--2:'Nanum Pen Script';
+$fnt-delice--2:'Kalam';
 
 $fnt-palette--1:'Kaushan Script';
 $fnt-palette--2:$fnt-delice--2;

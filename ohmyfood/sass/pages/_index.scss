@@ -79,7 +79,7 @@
     &--title{
         font-family: $fnt-delice--1;
         font-size: 40px;
-        background: -webkit-linear-gradient(110deg,$clr_menu_delice--3,$clr_menu_delice--2,$clr_menu_delice--1);
+        background: -webkit-linear-gradient(110deg,$clr_menu_delice--3 0%, $clr_menu_delice--1 80%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
     }
@@ -100,7 +100,7 @@
     &--title{
         font-family: $fnt-palette--1;
         font-size: 40px;
-        background: -webkit-linear-gradient(110deg,$clr_menu_palette--2,$clr_menu_palette--1);
+        background: -webkit-linear-gradient(110deg,$clr_menu_palette--3 30%, $clr_menu_palette--1 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
     }
