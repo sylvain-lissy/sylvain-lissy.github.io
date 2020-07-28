@@ -159,7 +159,7 @@ footer p:hover {
 .menu_chic--title {
   font-family: "Croissant One";
   font-size: 30px;
-  background: -webkit-linear-gradient(100deg, #6E4CCC, #A56799, #C67412);
+  background: -webkit-linear-gradient(110deg, #6E4CCC 0%, #C67412 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -420,11 +420,10 @@ footer p:hover {
   align-items: center;
   justify-content: center;
   font-family: "Croissant One";
-  background: -webkit-linear-gradient(100deg, #6E4CCC, #A56799, #C67412);
+  background: -webkit-linear-gradient(110deg, #6E4CCC 0%, #C67412 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 50px;
-  font-weight: normal;
+  font-size: 30px;
 }
 .menu_chic_entree {
   display: flex;
@@ -432,7 +431,8 @@ footer p:hover {
   align-items: center;
   justify-content: center;
   font-family: "DM Serif Text";
-  font-size: 30px;
+  font-size: 25px;
+  padding: 5% 0;
 }
 .menu_chic_entree--titre {
   display: flex;
@@ -441,12 +441,269 @@ footer p:hover {
   justify-content: space-between;
   width: 100%;
   color: #C67412;
+}
+.menu_chic_entree--titre h4 {
   text-decoration: none;
-  background: linear-gradient(to top, #C67412 0%, #C67412 10%, transparent 1%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #C67412 0%, #C67412 5%, transparent 1%) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
 }
-.menu_chic_entree--titre h4:hover {
-  background-size: 100% 100%;
+.menu_chic_entree--titre img {
+  width: 30%;
+}
+.menu_chic_entree--contenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  color: #C67412;
+  font-size: 20px;
+}
+.menu_chic_entree--contenu .plat {
+  width: 70%;
+}
+.menu_chic_entree--contenu .prix {
+  width: 20%;
+  text-align: right;
+}
+.menu_chic_plat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Serif Text";
+  font-size: 25px;
+  padding: 5% 0;
+}
+.menu_chic_plat--titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #A56799;
+}
+.menu_chic_plat--titre h4 {
+  text-decoration: none;
+  background: linear-gradient(to top, #A56799 0%, #A56799 5%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.menu_chic_plat--titre img {
+  width: 30%;
+}
+.menu_chic_plat--contenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  color: #A56799;
+  font-size: 20px;
+}
+.menu_chic_plat--contenu .plat {
+  width: 70%;
+}
+.menu_chic_plat--contenu .prix {
+  width: 20%;
+  text-align: right;
+}
+.menu_chic_dessert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Serif Text";
+  font-size: 25px;
+  padding: 5% 0;
+}
+.menu_chic_dessert--titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #6E4CCC;
+}
+.menu_chic_dessert--titre h4 {
+  text-decoration: none;
+  background: linear-gradient(to top, #6E4CCC 0%, #6E4CCC 5%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.menu_chic_dessert--titre img {
+  width: 30%;
+}
+.menu_chic_dessert--contenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  color: #6E4CCC;
+  font-size: 20px;
+}
+.menu_chic_dessert--contenu .plat {
+  width: 100%;
+}
+
+.menu_titre {
+  font-family: "Montserrat";
+  font-size: 30px;
+}
+
+.menu_delice_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+.menu_delice_contenu {
+  margin: 3%;
+  padding: 3%;
+  background-color: #F9F9F9;
+  box-shadow: 0 0 10px #999;
+  width: 70%;
+}
+.menu_delice_titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Dancing Script";
+  background: -webkit-linear-gradient(100deg, #229DF9, #0670F3, #0228DD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  font-weight: normal;
+}
+.menu_delice_entree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nanum Pen Script";
+  font-size: 25px;
+  padding: 5% 0;
+}
+.menu_delice_entree--titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #0228DD;
+}
+.menu_delice_entree--titre h4 {
+  text-decoration: none;
+  background: linear-gradient(to top, #0228DD 0%, #0228DD 5%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.menu_delice_entree--titre img {
+  width: 30%;
+}
+.menu_delice_entree--contenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  color: #0228DD;
+  font-size: 20px;
+}
+.menu_delice_entree--contenu .plat {
+  width: 70%;
+}
+.menu_delice_entree--contenu .prix {
+  width: 20%;
+  text-align: right;
+}
+.menu_delice_plat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nanum Pen Script";
+  font-size: 25px;
+  padding: 5% 0;
+}
+.menu_delice_plat--titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #0670F3;
+}
+.menu_delice_plat--titre h4 {
+  text-decoration: none;
+  background: linear-gradient(to top, #0670F3 0%, #0670F3 5%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.menu_delice_plat--titre img {
+  width: 30%;
+}
+.menu_delice_plat--contenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  color: #0670F3;
+  font-size: 20px;
+}
+.menu_delice_plat--contenu .plat {
+  width: 70%;
+}
+.menu_delice_plat--contenu .prix {
+  width: 20%;
+  text-align: right;
+}
+.menu_delice_dessert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nanum Pen Script";
+  font-size: 25px;
+  padding: 5% 0;
+}
+.menu_delice_dessert--titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #229DF9;
+}
+.menu_delice_dessert--titre h4 {
+  text-decoration: none;
+  background: linear-gradient(to top, #229DF9 0%, #229DF9 5%, transparent 1%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.menu_delice_dessert--titre img {
+  width: 30%;
+}
+.menu_delice_dessert--contenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  color: #229DF9;
+  font-size: 20px;
+}
+.menu_delice_dessert--contenu .plat {
+  width: 70%;
+}
+.menu_delice_dessert--contenu .prix {
+  width: 20%;
+  text-align: right;
 }
 
 /*# sourceMappingURL=main_style.css.map */
