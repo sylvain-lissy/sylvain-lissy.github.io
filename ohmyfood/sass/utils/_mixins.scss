@@ -5,16 +5,42 @@
     justify-content: $Justify;
 }
 
+@mixin Effet_Popout{
+    animation: menu_pop_out_effect 300ms ease-in-out both;
+    transform: scale(1);
+}
+
 @mixin Underline($couleursoulignement) {
     text-decoration: none;
     background: linear-gradient(to top, $couleursoulignement 0%, $couleursoulignement 5%, transparent 1%) no-repeat left bottom / 0 100%;
     transition: background-size .5s;
 }
 
-
 @mixin Menu_Gradient($colorA: #000, $colorB: #000) {
     background: $colorA;
     background: linear-gradient(125deg, $colorA 0%, $colorB 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@mixin Box-Shadow($Shadow: #999){
+    box-shadow: 0 0 10px $Shadow;
+}
+
+@mixin Degrade_chic{
+    background:  -webkit-linear-gradient(110deg, $clr_menu_chic--3 0%,$clr_menu_chic--2 40%, $clr_menu_chic--1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}
+
+@mixin Degrade_delice{
+    background: -webkit-linear-gradient(100deg,$clr_menu_delice--3,$clr_menu_delice--2,$clr_menu_delice--1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}
+
+@mixin Degrade_palette{
+    background: -webkit-linear-gradient(110deg,$clr_menu_palette--3 30%, $clr_menu_palette--1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
 }

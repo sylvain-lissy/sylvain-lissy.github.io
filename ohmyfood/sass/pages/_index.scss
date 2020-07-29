@@ -1,148 +1,109 @@
-// GRILLE PAGE PRINCIPALE //
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 400px);
-    grid-template-rows: 600px 600px 200px;
-    gap: 5% 10%;
-    grid-template-areas: "menu_note menu_chic" "menu_delice menu_palette" "upcoming upcoming";
-    justify-content: center;
-}
-
-// STYLE POUR L'AFFICHAGE MENU SUR PAGE PRINCIPALE //
-.menu_general {
-    //box-shadow: 5px 5px 10px #999;
-    & a, section, span{
-    text-decoration: none;   
+.index{
+    &_main{
+    @include Center_elements($Direction: row);
+    flex-wrap: wrap;
+    width: 70%;
+    padding: 3%;
     }
-    & a{box-shadow: 5px 5px 10px #999;}
-}
-
-.menu_animation{
-    width:400px;
-    height: 600px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    &:hover{
-    animation: menu_pop_out_effect 300ms ease-in both;
-    transform: scale(1);
-    }
-}
-// Menu La note enchantée 
-.menu_note{
-    grid-area: menu_note;
-    display: flex;
-    justify-content: center;
-    background-color: $clr_menu_note--bg;
-    color: $clr_menu_note--1 ;
-    &--title{
-        font-family: $fnt-note--1;
-        font-size: 50px;
-    }
-    &--menu{
-        font-family: $fnt-note--2;
-        font-size: 50px;
-        font-style: italic;
-        text-transform: uppercase;
-    }
-}
-
-// Menu Le chic à la française
-.menu_chic{
-    grid-area: menu_chic;
-    display: flex;
-    justify-content: center;
-    background-color: $clr_menu_chic--bg;
-    &--title{
-        font-family: $fnt-chic--1;
-        font-size: 30px;
-        background: -webkit-linear-gradient(110deg, $clr_menu_chic--3 0%, $clr_menu_chic--1 80%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-    }
-    &--menu{
-        font-family: $fnt-chic--2;
-        font-size: 60px;
-        color:$clr_menu_chic--1;
-
-    }
-}
-
-// Menu Le délice des papilles
-.menu_delice{
-    grid-area: menu_delice;
-    display: flex;
-    justify-content: center;
-    background-color: $clr_menu_delice--bg;    
-    &--title{
-        font-family: $fnt-delice--1;
-        font-size: 40px;
-        background: -webkit-linear-gradient(110deg,$clr_menu_delice--3 0%, $clr_menu_delice--1 80%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-    }
-    &--menu{
-        font-family: $fnt-delice--2;
-        font-size: 60px;
-        font-style: italic;
-        color:$clr_menu_delice--3;
-    }
-}
-
-// Menu La palette du goût
-.menu_palette{  
-    grid-area: menu_palette;
-    display: flex;
-    justify-content: center;
-    background-color: $clr_menu_palette--bg;
-    &--title{
-        font-family: $fnt-palette--1;
-        font-size: 40px;
-        background: -webkit-linear-gradient(110deg,$clr_menu_palette--3 30%, $clr_menu_palette--1 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-    }
-    &--menu{
-        font-family: $fnt-palette--2;
-        font-size: 60px;
-        font-style: italic;
-        color:$clr_menu_palette--2;
-    }
-}
-
-// MENU PROCHAINEMENT //
-.upcoming{
-    grid-area: upcoming;
-    display: flex;
-    justify-content: center;
-    &--content{
-        width:270px;
-        height: 50px;
-        background-color: $bg-color;
-        color: $txt-color;
-        text-align: center;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        &__txt{
-            font-size: 25px;
-            font-family: $fnt-header-footer; 
+    &_menu {
+        @include Box-Shadow;
+        width:40%;
+        margin: 2%;
+        &-detail {
+            @include Center_elements($Direction: column);
+            width:100%;
+            height:700px;
+            &:hover {
+                @include Effet_Popout;
+            }
         }
-        &__loading{
-            margin: 12px 0 0 6px;
-            width: 5px;
-            height: 5px;
+        &-nom{
+            margin:0;
+            padding:0 1%;
+        }
+        &-soustitre{
+            margin:0;
+        }
+        &:nth-child(1) {
+            background-color: $clr_menu_note--bg;
+            .index_menu{
+                &-nom{
+                    font: 50px $fnt-note--1;
+                    color: $clr_menu_note--1;
+                }
+                &-soustitre{
+                    font: italic 50px $fnt-note--2;
+                    color: $clr_menu_note--1;
+                }
+            }
+        }
+        &:nth-child(2) {
+            background-color: $clr_menu_chic--bg;
+            .index_menu{
+                &-nom{
+                    font: 30px $fnt-chic--1;
+                    //color: $clr_menu_chic--1;
+                    @include Degrade_chic;
+                }
+                &-soustitre{
+                    font: 60px $fnt-chic--2;
+                    color: $clr_menu_chic--1;
+                }
+            }
+        }
+        &:nth-child(3) {
+            background-color: $clr_menu_delice--bg;
+            .index_menu{
+                &-nom{
+                    font: 40px $fnt-delice--1;
+                    @include Degrade_delice;
+                }
+                &-soustitre{
+                    font: 60px $fnt-delice--2;
+                    color: $clr_menu_delice--2;
+                }
+            }
+        }
+        &:nth-child(4) {
+            background-color: $clr_menu_palette--bg;
+            .index_menu{
+                &-nom{
+                    font: 40px $fnt-palette--1;
+                    @include Degrade-palette;
+                }
+                &-soustitre{
+                    font: 60px $fnt-palette--2;
+                    color: $clr_menu_palette--2;
+                }
+            }
+        }
+    }
+    &_upcoming{
+        @include Center_elements;
+        width:40%;
+        margin: 2%;
+        &-detail {
+            @include Center_elements($Direction: row);
+            width:80%;
+            height:40px;
+            background-color: $bg-color;
+            border-radius: 15px;
+        }
+        &-txt{
+            font: 25px $fnt-header-footer;
+            color: $txt-color;
+        }
+        &-loading{
+            @include Center_elements;
+            margin: 14px 0 0 6px;
+            width: 4px;
+            height: 4px;
             border-radius: 50%;
             background-color: $txt-color;
-            animation: anim_btn_opacity $anim_btn_duree cubic-bezier(.74, .32, .53, .76) backwards infinite;
-
+            animation: anim_btn_opacity $anim_btn_duree ease-in-out infinite;
             @for $i from 1 through 3 {
-                &--#{$i} {
-                    animation-delay: ($anim_btn_delay/4)-250+($i*250);
+                &-#{$i} {
+                animation-delay: ($anim_btn_delay/$i);
                 }
             }
         }

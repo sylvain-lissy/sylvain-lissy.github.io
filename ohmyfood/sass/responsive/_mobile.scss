@@ -1,0 +1,71 @@
+@media only screen and (max-width : 1200px) {
+    .index{
+        &_main {
+        @include Center_elements($Direction: column);
+        width:100%;
+        padding: 0;
+        }
+        &_menu {
+            width:95%;
+            &-detail{
+                height:950px;
+            }
+        }
+        &_upcoming{
+            width:50%;
+            padding-bottom: 5%;
+        }
+    }
+
+    .note{
+        &__main{
+            width:95%;    
+            &--section{
+                width:95%;    
+            }
+        }
+    }
+
+    .menu_chic{
+        &_main, &_contenu{
+            width:95%;  
+        }
+        &_entree, &_plat, &_dessert{
+            font-size: 22px;
+        }
+    }
+
+    .menu_delice{
+        &_main, &_contenu{
+            width:95%;  
+        }
+        &_entree, &_plat, &_dessert{
+            font-size: 30px;
+            &--contenu{
+                .plat{
+                    font-size: 25px;
+                }
+                .prix{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    .menu_palette{
+        &_main, &_contenu{
+            width:95%;  
+        }
+        &_entree, &_plat, &_dessert{
+            font-size: 30px;
+            &--contenu{
+                .plat{
+                    font-size: 20px;
+                }
+                .prix{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}

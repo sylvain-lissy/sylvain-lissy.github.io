@@ -27,7 +27,7 @@
     opacity: 1;
   }
   100% {
-    transform: scale(1.15);
+    transform: scale(1.1);
     opacity: 0.75;
   }
 }
@@ -58,24 +58,28 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 header, footer {
   width: 100%;
   background-color: #569c87;
-  display: flex;
 }
-
 header a, footer a {
   color: #FDCB46;
-  text-decoration: none;
   font-family: "Montserrat";
 }
 
 header {
   height: 150px;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 header h1 {
   font-size: 100px;
@@ -85,167 +89,151 @@ header h1 {
 main {
   margin: 5% 10%;
   padding: 0;
+  width: 80%;
 }
 
 footer {
   position: fixed;
   height: 50px;
   bottom: 0;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 footer p {
-  margin: 10px;
+  margin: 2%;
   font-size: 20px;
 }
 footer p:hover {
   animation: footer_wiggle_effect 300ms ease-in-out 1;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 400px);
-  grid-template-rows: 600px 600px 200px;
-  gap: 5% 10%;
-  grid-template-areas: "menu_note menu_chic" "menu_delice menu_palette" "upcoming upcoming";
-  justify-content: center;
-}
-
-.menu_general a, .menu_general section, .menu_general span {
-  text-decoration: none;
-}
-.menu_general a {
-  box-shadow: 5px 5px 10px #999;
-}
-
-.menu_animation {
-  width: 400px;
-  height: 600px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.menu_animation:hover {
-  animation: menu_pop_out_effect 300ms ease-in both;
-  transform: scale(1);
-}
-
-.menu_note {
-  grid-area: menu_note;
-  display: flex;
-  justify-content: center;
-  background-color: #FDE1DD;
-  color: #3D1319;
-}
-.menu_note--title {
-  font-family: "Devonshire";
-  font-size: 50px;
-}
-.menu_note--menu {
-  font-family: "Itim";
-  font-size: 50px;
-  font-style: italic;
-  text-transform: uppercase;
-}
-
-.menu_chic {
-  grid-area: menu_chic;
-  display: flex;
-  justify-content: center;
-  background-color: #FFF5FE;
-}
-.menu_chic--title {
-  font-family: "Croissant One";
-  font-size: 30px;
-  background: -webkit-linear-gradient(110deg, #6E4CCC 0%, #C67412 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.menu_chic--menu {
-  font-family: "DM Serif Text";
-  font-size: 60px;
-  color: #C67412;
-}
-
-.menu_delice {
-  grid-area: menu_delice;
-  display: flex;
-  justify-content: center;
-  background-color: #F9F9F9;
-}
-.menu_delice--title {
-  font-family: "Dancing Script";
-  font-size: 40px;
-  background: -webkit-linear-gradient(110deg, #229DF9 0%, #0228DD 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.menu_delice--menu {
-  font-family: "Kalam";
-  font-size: 60px;
-  font-style: italic;
-  color: #229DF9;
-}
-
-.menu_palette {
-  grid-area: menu_palette;
-  display: flex;
-  justify-content: center;
-  background-color: #FDFFFD;
-}
-.menu_palette--title {
-  font-family: "Kaushan Script";
-  font-size: 40px;
-  background: -webkit-linear-gradient(110deg, #B8FA7C 30%, #3D923A 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.menu_palette--menu {
-  font-family: "Kalam";
-  font-size: 60px;
-  font-style: italic;
-  color: #8DD565;
-}
-
-.upcoming {
-  grid-area: upcoming;
-  display: flex;
-  justify-content: center;
-}
-.upcoming--content {
-  width: 270px;
-  height: 50px;
-  background-color: #569c87;
-  color: #FDCB46;
-  text-align: center;
-  border-radius: 15px;
+.index_main {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 70%;
+  padding: 3%;
 }
-.upcoming--content__txt {
-  font-size: 25px;
-  font-family: "Montserrat";
+.index_menu {
+  box-shadow: 0 0 10px #999;
+  width: 40%;
+  margin: 2%;
 }
-.upcoming--content__loading {
-  margin: 12px 0 0 6px;
-  width: 5px;
-  height: 5px;
+.index_menu-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+}
+.index_menu-detail:hover {
+  animation: menu_pop_out_effect 300ms ease-in-out both;
+  transform: scale(1);
+}
+.index_menu-nom {
+  margin: 0;
+  padding: 0 1%;
+}
+.index_menu-soustitre {
+  margin: 0;
+}
+.index_menu:nth-child(1) {
+  background-color: #FDE1DD;
+}
+.index_menu:nth-child(1) .index_menu-nom {
+  font: 50px "Devonshire";
+  color: #3D1319;
+}
+.index_menu:nth-child(1) .index_menu-soustitre {
+  font: italic 50px "Itim";
+  color: #3D1319;
+}
+.index_menu:nth-child(2) {
+  background-color: #FFF5FE;
+}
+.index_menu:nth-child(2) .index_menu-nom {
+  font: 30px "Croissant One";
+  background: -webkit-linear-gradient(110deg, #6E4CCC 0%, #A56799 40%, #C67412 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.index_menu:nth-child(2) .index_menu-soustitre {
+  font: 60px "DM Serif Text";
+  color: #C67412;
+}
+.index_menu:nth-child(3) {
+  background-color: #F9F9F9;
+}
+.index_menu:nth-child(3) .index_menu-nom {
+  font: 40px "Dancing Script";
+  background: -webkit-linear-gradient(100deg, #229DF9, #0670F3, #0228DD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.index_menu:nth-child(3) .index_menu-soustitre {
+  font: 60px "Kalam";
+  color: #0670F3;
+}
+.index_menu:nth-child(4) {
+  background-color: #FDFFFD;
+}
+.index_menu:nth-child(4) .index_menu-nom {
+  font: 40px "Kaushan Script";
+  background: -webkit-linear-gradient(110deg, #B8FA7C 30%, #3D923A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.index_menu:nth-child(4) .index_menu-soustitre {
+  font: 60px "Kalam";
+  color: #8DD565;
+}
+.index_upcoming {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  margin: 2%;
+}
+.index_upcoming-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 40px;
+  background-color: #569c87;
+  border-radius: 15px;
+}
+.index_upcoming-txt {
+  font: 25px "Montserrat";
+  color: #FDCB46;
+}
+.index_upcoming-loading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 14px 0 0 6px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
   background-color: #FDCB46;
-  animation: anim_btn_opacity 1000ms cubic-bezier(0.74, 0.32, 0.53, 0.76) backwards infinite;
+  animation: anim_btn_opacity 1000ms ease-in-out infinite;
 }
-.upcoming--content__loading--1 {
-  animation-delay: 83.3333333333ms;
-}
-.upcoming--content__loading--2 {
+.index_upcoming-loading-1 {
   animation-delay: 333.3333333333ms;
 }
-.upcoming--content__loading--3 {
-  animation-delay: 583.3333333333ms;
+.index_upcoming-loading-2 {
+  animation-delay: 166.6666666667ms;
+}
+.index_upcoming-loading-3 {
+  animation-delay: 111.1111111111ms;
 }
 
 .legal__main {
@@ -900,6 +888,67 @@ footer p:hover {
   width: 20%;
   font-size: 35px;
   text-align: right;
+}
+
+@media only screen and (max-width: 1200px) {
+  .index_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+  .index_menu {
+    width: 95%;
+  }
+  .index_menu-detail {
+    height: 950px;
+  }
+  .index_upcoming {
+    width: 50%;
+    padding-bottom: 5%;
+  }
+
+  .note__main {
+    width: 95%;
+  }
+  .note__main--section {
+    width: 95%;
+  }
+
+  .menu_chic_main, .menu_chic_contenu {
+    width: 95%;
+  }
+  .menu_chic_entree, .menu_chic_plat, .menu_chic_dessert {
+    font-size: 22px;
+  }
+
+  .menu_delice_main, .menu_delice_contenu {
+    width: 95%;
+  }
+  .menu_delice_entree, .menu_delice_plat, .menu_delice_dessert {
+    font-size: 30px;
+  }
+  .menu_delice_entree--contenu .plat, .menu_delice_plat--contenu .plat, .menu_delice_dessert--contenu .plat {
+    font-size: 25px;
+  }
+  .menu_delice_entree--contenu .prix, .menu_delice_plat--contenu .prix, .menu_delice_dessert--contenu .prix {
+    font-size: 30px;
+  }
+
+  .menu_palette_main, .menu_palette_contenu {
+    width: 95%;
+  }
+  .menu_palette_entree, .menu_palette_plat, .menu_palette_dessert {
+    font-size: 30px;
+  }
+  .menu_palette_entree--contenu .plat, .menu_palette_plat--contenu .plat, .menu_palette_dessert--contenu .plat {
+    font-size: 20px;
+  }
+  .menu_palette_entree--contenu .prix, .menu_palette_plat--contenu .prix, .menu_palette_dessert--contenu .prix {
+    font-size: 25px;
+  }
 }
 
 /*# sourceMappingURL=main_style.css.map */
