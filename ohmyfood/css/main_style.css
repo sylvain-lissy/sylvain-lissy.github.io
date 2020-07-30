@@ -76,6 +76,8 @@ header {
 header h1 {
   font-size: 100px;
   letter-spacing: -6px;
+  color: #FDCB46;
+  font-family: "Montserrat";
 }
 
 main {
