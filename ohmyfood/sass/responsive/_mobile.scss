@@ -17,12 +17,9 @@
         }
     }
 
-    .note{
-        &__main{
+    .menu_note{
+        &_main, &_contenu{
             width:95%;    
-            &--section{
-                width:95%;    
-            }
         }
     }
 
@@ -66,6 +63,11 @@
                     font-size: 25px;
                 }
             }
+        }
+    }
+    .legal{
+        &_main, &_contenu{
+            width:95%;  
         }
     }
 }

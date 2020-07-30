@@ -1,7 +1,3 @@
-.menu_titre{
-    font-family: $fnt-header-footer;
-    font-size: 30px;
-}
 .menu_delice{
     &_main{
         @include Center_elements($Direction:column);
@@ -11,21 +7,17 @@
         margin: 3%;
         padding: 3%;
         background-color: $clr_menu_delice--bg;
-        box-shadow: 0 0 10px #999;
+        @include Box-Shadow;
         width: 70%;
     }
     &_titre{
         @include Center_elements;
-        font-family: $fnt-delice--1;
-        background: -webkit-linear-gradient(100deg,$clr_menu_delice--3,$clr_menu_delice--2,$clr_menu_delice--1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        font-size:  70px;
+        font: 70px $fnt-delice--1;
+        @include Degrade_delice;
     }
     &_entree{
         @include Center_elements($Direction:column);
-        font-family: $fnt-delice--2;
-        font-size:  38px;
+        font: 38px $fnt-delice--2;
         padding: 5% 0;
         &--titre{
             @include Center_elements($Justify:space-between);
@@ -59,8 +51,7 @@
     }
     &_plat{
         @include Center_elements($Direction:column);
-        font-family: $fnt-delice--2;
-        font-size:  38px;
+        font: 38px $fnt-delice--2;
         padding: 5% 0;
         &--titre{
             @include Center_elements($Justify:space-between);
@@ -81,7 +72,6 @@
             flex-wrap: wrap;
             width:80%;
             color: $txt-basic;
-            font-size: 20px;
             .plat{
                 width:70%;
                 font-size: 30px;
@@ -117,7 +107,6 @@
             flex-wrap: wrap;
             width:80%;
             color: $txt-basic;
-            font-size: 20px;
             .plat{
                 width:70%;
                 font-size: 30px;

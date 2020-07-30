@@ -32,7 +32,8 @@
                     color: $clr_menu_note--1;
                 }
                 &-soustitre{
-                    font: italic 50px $fnt-note--2;
+                    font: italic 50px $fnt-note--2 ;
+                    text-transform: uppercase;
                     color: $clr_menu_note--1;
                 }
             }

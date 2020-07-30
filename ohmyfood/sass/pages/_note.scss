@@ -1,114 +1,96 @@
-.note{
-    &__main{
+.menu_note{
+    &_main{
+        @include Center_elements($Direction:column);
         width:80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        &--title{
-            font-family: $fnt-header-footer;
-            font-size: 30px;
+    }
+    &_contenu{
+        margin: 3%;
+        padding: 3%;
+        background-color: $clr_menu_note--bg;
+        @include Box-Shadow;
+        width: 70%;
+    }
+    &_titre{
+        @include Center_elements ($Direction: column);
+        & h3{
+            font:normal 60px $fnt-note--1;
+            color: $clr_menu_note--1;
+            margin: auto;
         }
-        &--section{
-            margin: 3%;
-            padding: 3%;
-            background-color: $clr_menu_note--bg;
-            box-shadow: 0 0 10px #999;
-            width: 70%;
-        }
-        & section{
-            & .menu_title{
-                & h3, img{
-                font-family: $fnt-note--1;
-                color: $clr_menu_note--1;
-                font-size:  50px;
-                font-weight: normal;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin: auto;      
+    }
+    &_entree, &_plat{
+        @include Center_elements($Direction:column);
+        font: 34px $fnt-note--2;
+        padding: 5% 0;
+        &--titre{
+            @include Center_elements($Justify:space-between);
+            width:100%;
+            color: $clr_menu_note--1;
+            & h4{
+                @include Underline ($clr_menu_note--1);
+                &:hover{
+                    background-size: 100% 100%;
                 }
             }
-            & .menu_part{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                &--title{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-                    width:90%;
-                    & img{
-                        width: 20%;
-                        height:20%;
-                        //margin: 0 20px;
-                    }
-                }
-                & h4 {
-                    font-family: $fnt-note--2;
-                    color: $clr_menu_note--1;
-                    font-size: 35px;
-                    text-align: center;
-                    background: linear-gradient(to top, $clr_menu_note--1 0%, $clr_menu_note--1 5%, transparent 1%) no-repeat left bottom / 0 100%;
-                    transition: background-size .5s;
-                    &:hover{
-                        background-size: 100% 100%;
-                    }
-                }
-                &--content{
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    width:100%;
-                    font-family: $fnt-note--2;
-                    color: $clr_menu_note--1;
-                    font-size: 20px;
-                    & .plat{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: flex-start;
-                        width: 70%;
-                        text-align: left;
-                        margin-left :20px; 
-                    }
-                    & .prix{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: flex-end;
-                        width: 20%;
-                        margin-right: 20px;
-                    }
-                    & .dessert{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: flex-start;
-                        width: 90%;
-                        text-align: left;
-                        margin-left :20px; 
-                    }
+            & img{
+                width: 30%;
+            }
+        }
+        &--contenu{
+            @include Center_elements($Direction: row, $Justify:space-between);
+            flex-wrap: wrap;
+            width:90%;
+            color: $clr_menu_note--1;
+            font-size: 20px;
+            .plat{
+                width:70%;
+            }
+            .prix{
+                width:20%;
+                text-align: right;
+            }
+        }
+    }
+    &_dessert{
+        @include Center_elements($Direction:column);
+        font: 25px $fnt-note--2;
+        padding: 5% 0;
+        &--titre{
+            @include Center_elements($Justify:space-between);
+            width:100%;
+            color: $clr_menu_note--1;
+            & h4{
+                @include Underline ($clr_menu_chic--1);
+                &:hover{
+                    background-size: 100% 100%;
                 }
             }
-            & .menu_footer{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 5%;      
-                & h3{
-                    font-family: $fnt-note--1;
-                    color: $clr_menu_note--1;
-                    font-size:  40px;
-                    padding-left: 10px;
-                    font-weight: normal;
-                }
-                & img{
-                    width: 7%;
-                    height:7%;
-                }
-            } 
+            & img{
+                width: 30%;
+            }
+        }
+        &--contenu{
+            @include Center_elements($Align: flex-start, $Direction: column);
+            flex-wrap: wrap;
+            width:90%;
+            color: $clr_menu_note--1;
+            font-size: 20px;
+            .plat{
+                width:100%;
+            }
+        }
+    }
+    &_footer{
+        @include Center_elements;
+        margin: 5%;      
+        & h3{
+            font: normal 40px $fnt-note--1;
+            color: $clr_menu_note--1;
+            padding-left: 10px;
+        }
+        & img{
+            width: 7%;
+            height:7%;
         }
     }
 }
