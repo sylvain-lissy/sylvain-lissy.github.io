@@ -96,7 +96,7 @@ footer {
   justify-content: space-between;
 }
 footer p {
-  margin: 2%;
+  padding: 0 2%;
   font-size: 20px;
 }
 footer p:hover {
@@ -241,11 +241,13 @@ footer p:hover {
   align-items: center;
   justify-content: center;
   width: 80%;
+  padding-bottom: 10%;
 }
 .legal_contenu {
   box-shadow: 0 0 10px #999;
   margin: 3%;
   padding: 3%;
+  padding-bottom: 10%;
   background-color: #EEE;
   font-family: "Montserrat";
   color: #444;
@@ -933,6 +935,20 @@ footer p:hover {
   }
 }
 @media only screen and (max-width: 768px) {
+  header {
+    height: 100px;
+  }
+  header h1 {
+    font-size: 60px;
+  }
+
+  footer {
+    height: 30px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+
   .index_main {
     display: flex;
     flex-direction: column;
@@ -941,10 +957,31 @@ footer p:hover {
   }
   .index_menu {
     width: 77.4%;
-    height: 800px;
+    height: 500px;
   }
   .index_menu-detail {
-    height: 800px;
+    height: 500px;
+  }
+  .index_menu:nth-child(1) .index_menu-nom, .index_menu:nth-child(1) .index_menu-soustitre {
+    font-size: 45px;
+  }
+  .index_menu:nth-child(2) .index_menu-nom {
+    font-size: 24px;
+  }
+  .index_menu:nth-child(2) .index_menu-soustitre {
+    font-size: 45px;
+  }
+  .index_menu:nth-child(3) .index_menu-nom {
+    font-size: 30px;
+  }
+  .index_menu:nth-child(3) .index_menu-soustitre {
+    font-size: 45px;
+  }
+  .index_menu:nth-child(4) .index_menu-nom {
+    font-size: 35px;
+  }
+  .index_menu:nth-child(4) .index_menu-soustitre {
+    font-size: 45px;
   }
   .index_upcoming {
     width: 45%;
@@ -977,28 +1014,13 @@ footer p:hover {
   }
 }
 @media only screen and (max-width: 320px) {
-  header {
-    height: 100px;
-  }
-  header h1 {
-    font-size: 60px;
-  }
-
-  footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    height: 30px;
-  }
-  footer p {
-    font-size: 12px;
-  }
-
   .menu_titre {
     font-size: 15px;
   }
 
+  .index_main, .index_contenu {
+    padding-bottom: 10%;
+  }
   .index_menu {
     width: 95%;
     height: 500px;
@@ -1017,11 +1039,24 @@ footer p:hover {
   }
   .index_upcoming {
     width: 95%;
-    margin-bottom: 7%;
+  }
+
+  .legal_main, .legal_contenu {
+    width: 95%;
+  }
+  .legal_contenu h2 {
+    font-size: 30px;
+  }
+  .legal_contenu h3 {
+    font-size: 17px;
+  }
+  .legal_contenu p, .legal_contenu ul {
+    font-size: 10px;
   }
 
   .menu_note_main, .menu_note_contenu {
     width: 95%;
+    padding-bottom: 10%;
   }
   .menu_note_titre h3 {
     font-size: 40px;
@@ -1047,6 +1082,7 @@ footer p:hover {
 
   .menu_chic_main, .menu_chic_contenu {
     width: 95%;
+    padding-bottom: 10%;
   }
   .menu_chic_titre {
     font-size: 20px;
@@ -1063,6 +1099,7 @@ footer p:hover {
 
   .menu_delice_main, .menu_delice_contenu {
     width: 95%;
+    padding-bottom: 10%;
   }
   .menu_delice_titre {
     font-size: 30px;
@@ -1079,6 +1116,7 @@ footer p:hover {
 
   .menu_palette_main, .menu_palette_contenu {
     width: 95%;
+    padding-bottom: 10%;
   }
   .menu_palette_titre {
     font-size: 30px;

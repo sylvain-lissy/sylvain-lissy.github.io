@@ -1,4 +1,4 @@
-@media only screen and  (max-width : 1299px) {
+@media only screen and  (max-width: 1299px) {
     .index{
         &_main {
         width:100%;
@@ -12,19 +12,16 @@
             padding-bottom: 5%;
         }
     }
-
     .menu_note{
         &_main, &_contenu{
             width:85%;    
         }
     }
-
     .menu_chic{
         &_main, &_contenu{
             width:85%;  
         }
     }
-
     .menu_delice{
         &_main, &_contenu{
             width:85%;  
@@ -41,7 +38,6 @@
             }
         }
     }
-
     .menu_palette{
         &_main, &_contenu{
             width:85%;  
@@ -65,23 +61,71 @@
     }
 }
 
-@media only screen and  (max-width : 768px) {
+@media only screen and (max-width : 768px) {
+    header {
+        height:100px;
+        h1{
+        font-size:60px;
+        }
+    }
+    footer {
+        height:30px;
+        p{
+        font-size:12px;        
+        }
+    }
     .index{
         &_main {
             @include  Center_elements($Direction: column);
         }
         &_menu {
             width:77.4%;
-            height:800px;
+            height:500px;
             &-detail{
-                height:800px;
+                height:500px;
+            }
+            &:nth-child(1) {
+                .index_menu{
+                    &-nom, &-soustitre{
+                        font-size: 45px;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                .index_menu{
+                    &-nom{
+                        font-size:24px;
+                    } 
+                    &-soustitre{
+                        font-size: 45px;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                .index_menu{
+                    &-nom{
+                        font-size:30px;
+                    } 
+                    &-soustitre{
+                        font-size: 45px;
+                    }
+                }
+            }
+            &:nth-child(4) {
+                .index_menu{
+                    &-nom{
+                        font-size:35px;
+                    } 
+                    &-soustitre{
+                        font-size: 45px;
+                    }
+                }
             }
         }
         &_upcoming{
             width:45%;
         }
     }
-
     .menu_delice{
         &_titre{
             font: 60px $fnt-delice--1;
@@ -116,27 +160,14 @@
     }
 }
 
-@media only screen and  (max-width : 320px) {
-    header {
-        height:100px;
-        h1{
-        font-size:60px;
-        }
-    }
-
-    footer {
-        @include  Center_elements($Justify:space-around);
-        height:30px;
-        p{
-        font-size:12px;        
-        }
-    }
-
+@media only screen and (max-width : 320px) {
     .menu_titre{
         font-size: 15px;
     }
-
     .index{
+        &_main, &_contenu{
+            padding-bottom: 10%;
+        }
         &_menu {
             width:95%;
             height:500px;
@@ -163,12 +194,28 @@
         }
         &_upcoming{
             width:95%;
-            margin-bottom: 7%;
+        }
+    }
+    .legal{
+        &_main, &_contenu{
+            width:95%;    
+        }
+        &_contenu{
+            & h2{
+                font-size: 30px;
+            }
+            & h3{
+                font-size: 17px;
+            }
+            & p, & ul{
+                font-size: 10px;
+            }
         }
     }
     .menu_note{
         &_main, &_contenu{
-            width:95%;    
+            width:95%;  
+            padding-bottom: 10%;  
         }
         &_titre{
             & h3{
@@ -176,7 +223,6 @@
             }
             & img{
                 width:40%;
-                
             }
         }
         &_entree, &_plat, &_dessert{
@@ -197,10 +243,10 @@
             }
         }
     }
-
     .menu_chic{
         &_main, &_contenu{
             width:95%;    
+            padding-bottom: 10%;
         }
         &_titre{
             font-size:20px;    
@@ -215,10 +261,10 @@
             }
         }
     }
-
     .menu_delice{
         &_main, &_contenu{
             width:95%;    
+            padding-bottom: 10%;
         }
         &_titre{
             font-size:30px;    
@@ -233,10 +279,10 @@
             }
         }
     }
-
     .menu_palette{
         &_main, &_contenu{
             width:95%;    
+            padding-bottom: 10%;
         }
         &_titre{
             font-size:30px;    

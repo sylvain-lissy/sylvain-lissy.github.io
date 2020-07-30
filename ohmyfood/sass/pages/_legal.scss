@@ -2,11 +2,13 @@
     &_main{
         @include Center_elements($Direction:column);
         width:80%;
+        padding-bottom: 10%;
     }
     &_contenu{
         @include Box-Shadow;
         margin: 3%;
         padding: 3%;
+        padding-bottom: 10%;
         background-color: $clr_mention--bg;
         font-family: $fnt-header-footer;
         color: $clr_mention--txt;
