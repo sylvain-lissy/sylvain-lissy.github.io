@@ -43,7 +43,6 @@
             .index_menu{
                 &-nom{
                     font: 30px $fnt-chic--1;
-                    //color: $clr_menu_chic--1;
                     @include Degrade_chic;
                 }
                 &-soustitre{

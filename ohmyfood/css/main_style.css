@@ -81,7 +81,7 @@ header h1 {
 }
 
 main {
-  margin: 5% 10%;
+  margin: 0;
   padding: 0;
   width: 80%;
 }
@@ -881,39 +881,29 @@ footer p:hover {
   text-align: right;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1299px) {
   .index_main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     padding: 0;
   }
   .index_menu {
-    width: 95%;
-  }
-  .index_menu-detail {
-    height: 950px;
+    width: 46%;
   }
   .index_upcoming {
-    width: 50%;
+    width: 40%;
     padding-bottom: 5%;
   }
 
   .menu_note_main, .menu_note_contenu {
-    width: 95%;
+    width: 85%;
   }
 
   .menu_chic_main, .menu_chic_contenu {
-    width: 95%;
-  }
-  .menu_chic_entree, .menu_chic_plat, .menu_chic_dessert {
-    font-size: 22px;
+    width: 85%;
   }
 
   .menu_delice_main, .menu_delice_contenu {
-    width: 95%;
+    width: 85%;
   }
   .menu_delice_entree, .menu_delice_plat, .menu_delice_dessert {
     font-size: 30px;
@@ -926,7 +916,7 @@ footer p:hover {
   }
 
   .menu_palette_main, .menu_palette_contenu {
-    width: 95%;
+    width: 85%;
   }
   .menu_palette_entree, .menu_palette_plat, .menu_palette_dessert {
     font-size: 30px;
@@ -939,7 +929,168 @@ footer p:hover {
   }
 
   .legal_main, .legal_contenu {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .index_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .index_menu {
+    width: 77.4%;
+    height: 800px;
+  }
+  .index_menu-detail {
+    height: 800px;
+  }
+  .index_upcoming {
+    width: 45%;
+  }
+
+  .menu_delice_titre {
+    font: 60px "Dancing Script";
+  }
+  .menu_delice_entree, .menu_delice_plat, .menu_delice_dessert {
+    font-size: 24px;
+  }
+  .menu_delice_entree--contenu .plat, .menu_delice_plat--contenu .plat, .menu_delice_dessert--contenu .plat {
+    font-size: 20px;
+  }
+  .menu_delice_entree--contenu .prix, .menu_delice_plat--contenu .prix, .menu_delice_dessert--contenu .prix {
+    font-size: 24px;
+  }
+
+  .menu_palette_titre {
+    font: 60px "Kaushan Script";
+  }
+  .menu_palette_entree, .menu_palette_plat, .menu_palette_dessert {
+    font-size: 25px;
+  }
+  .menu_palette_entree--contenu .plat, .menu_palette_plat--contenu .plat, .menu_palette_dessert--contenu .plat {
+    font-size: 15px;
+  }
+  .menu_palette_entree--contenu .prix, .menu_palette_plat--contenu .prix, .menu_palette_dessert--contenu .prix {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  header {
+    height: 100px;
+  }
+  header h1 {
+    font-size: 60px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 30px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+
+  .menu_titre {
+    font-size: 15px;
+  }
+
+  .index_menu {
     width: 95%;
+    height: 500px;
+  }
+  .index_menu-detail {
+    height: 500px;
+  }
+  .index_menu:nth-child(1) .index_menu-nom, .index_menu:nth-child(1) .index_menu-soustitre {
+    font-size: 40px;
+  }
+  .index_menu:nth-child(2) .index_menu-nom {
+    font-size: 25px;
+  }
+  .index_menu:nth-child(2) .index_menu-soustitre {
+    font-size: 50px;
+  }
+  .index_upcoming {
+    width: 95%;
+    margin-bottom: 7%;
+  }
+
+  .menu_note_main, .menu_note_contenu {
+    width: 95%;
+  }
+  .menu_note_titre h3 {
+    font-size: 40px;
+  }
+  .menu_note_titre img {
+    width: 40%;
+  }
+  .menu_note_entree, .menu_note_plat, .menu_note_dessert {
+    font-size: 15px;
+  }
+  .menu_note_entree img, .menu_note_plat img, .menu_note_dessert img {
+    width: 25%;
+  }
+  .menu_note_entree .plat, .menu_note_entree .prix, .menu_note_plat .plat, .menu_note_plat .prix, .menu_note_dessert .plat, .menu_note_dessert .prix {
+    font-size: 12px;
+  }
+  .menu_note_footer h3 {
+    font-size: 30px;
+  }
+  .menu_note_footer img {
+    width: 10%;
+  }
+
+  .menu_chic_main, .menu_chic_contenu {
+    width: 95%;
+  }
+  .menu_chic_titre {
+    font-size: 20px;
+  }
+  .menu_chic_entree, .menu_chic_plat, .menu_chic_dessert {
+    font-size: 14px;
+  }
+  .menu_chic_entree img, .menu_chic_plat img, .menu_chic_dessert img {
+    width: 22%;
+  }
+  .menu_chic_entree .plat, .menu_chic_entree .prix, .menu_chic_plat .plat, .menu_chic_plat .prix, .menu_chic_dessert .plat, .menu_chic_dessert .prix {
+    font-size: 12px;
+  }
+
+  .menu_delice_main, .menu_delice_contenu {
+    width: 95%;
+  }
+  .menu_delice_titre {
+    font-size: 30px;
+  }
+  .menu_delice_entree, .menu_delice_plat, .menu_delice_dessert {
+    font-size: 15px;
+  }
+  .menu_delice_entree img, .menu_delice_plat img, .menu_delice_dessert img {
+    width: 25%;
+  }
+  .menu_delice_entree .plat, .menu_delice_entree .prix, .menu_delice_plat .plat, .menu_delice_plat .prix, .menu_delice_dessert .plat, .menu_delice_dessert .prix {
+    font-size: 12px;
+  }
+
+  .menu_palette_main, .menu_palette_contenu {
+    width: 95%;
+  }
+  .menu_palette_titre {
+    font-size: 30px;
+  }
+  .menu_palette_entree, .menu_palette_plat, .menu_palette_dessert {
+    font-size: 15px;
+  }
+  .menu_palette_entree img, .menu_palette_plat img, .menu_palette_dessert img {
+    width: 25%;
+  }
+  .menu_palette_entree .plat, .menu_palette_entree .prix, .menu_palette_plat .plat, .menu_palette_plat .prix, .menu_palette_dessert .plat, .menu_palette_dessert .prix {
+    font-size: 12px;
   }
 }
 

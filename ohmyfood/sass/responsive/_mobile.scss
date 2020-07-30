@@ -1,49 +1,42 @@
-@media only screen and (max-width : 1200px) {
+@media only screen and  (max-width : 1299px) {
     .index{
         &_main {
-        @include Center_elements($Direction: column);
         width:100%;
         padding: 0;
         }
         &_menu {
-            width:95%;
-            &-detail{
-                height:950px;
-            }
+            width:46%;
         }
         &_upcoming{
-            width:50%;
+            width:40%;
             padding-bottom: 5%;
         }
     }
 
     .menu_note{
         &_main, &_contenu{
-            width:95%;    
+            width:85%;    
         }
     }
 
     .menu_chic{
         &_main, &_contenu{
-            width:95%;  
-        }
-        &_entree, &_plat, &_dessert{
-            font-size: 22px;
+            width:85%;  
         }
     }
 
     .menu_delice{
         &_main, &_contenu{
-            width:95%;  
+            width:85%;  
         }
         &_entree, &_plat, &_dessert{
             font-size: 30px;
             &--contenu{
                 .plat{
-                    font-size: 25px;
+                   font-size: 25px;
                 }
                 .prix{
-                    font-size: 30px;
+                   font-size: 30px;
                 }
             }
         }
@@ -51,10 +44,10 @@
 
     .menu_palette{
         &_main, &_contenu{
-            width:95%;  
+            width:85%;  
         }
         &_entree, &_plat, &_dessert{
-            font-size: 30px;
+             font-size: 30px;
             &--contenu{
                 .plat{
                     font-size: 20px;
@@ -67,7 +60,195 @@
     }
     .legal{
         &_main, &_contenu{
-            width:95%;  
+            width:85%;  
+        }
+    }
+}
+
+@media only screen and  (max-width : 768px) {
+    .index{
+        &_main {
+            @include  Center_elements($Direction: column);
+        }
+        &_menu {
+            width:77.4%;
+            height:800px;
+            &-detail{
+                height:800px;
+            }
+        }
+        &_upcoming{
+            width:45%;
+        }
+    }
+
+    .menu_delice{
+        &_titre{
+            font: 60px $fnt-delice--1;
+        }
+        &_entree, &_plat, &_dessert{
+            font-size: 24px;
+            &--contenu{
+                .plat{
+                   font-size: 20px;
+                }
+                .prix{
+                   font-size: 24px;
+                }
+            }
+        }
+    }
+    .menu_palette{
+        &_titre{
+            font: 60px $fnt-palette--1; 
+        }
+        &_entree, &_plat, &_dessert{
+             font-size: 25px;
+            &--contenu{
+                .plat{
+                    font-size: 15px;
+                }
+                .prix{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and  (max-width : 320px) {
+    header {
+        height:100px;
+        h1{
+        font-size:60px;
+        }
+    }
+
+    footer {
+        @include  Center_elements($Justify:space-around);
+        height:30px;
+        p{
+        font-size:12px;        
+        }
+    }
+
+    .menu_titre{
+        font-size: 15px;
+    }
+
+    .index{
+        &_menu {
+            width:95%;
+            height:500px;
+            &-detail{
+                height:500px;
+            }
+            &:nth-child(1) {
+                .index_menu{
+                    &-nom, &-soustitre{
+                        font-size: 40px;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                .index_menu{
+                    &-nom{
+                        font-size:25px;
+                    }
+                    &-soustitre{
+                        font-size:50px;
+                    }
+                }
+            }
+        }
+        &_upcoming{
+            width:95%;
+            margin-bottom: 7%;
+        }
+    }
+    .menu_note{
+        &_main, &_contenu{
+            width:95%;    
+        }
+        &_titre{
+            & h3{
+                font-size:40px;
+            }
+            & img{
+                width:40%;
+                
+            }
+        }
+        &_entree, &_plat, &_dessert{
+            & img{
+                width:25%;
+            }
+            font-size: 15px;
+            & .plat, .prix{
+                font-size:12px;
+            }     
+        }
+        &_footer{
+            & h3{
+                font-size:30px;
+            }
+            & img{
+                width:10%;
+            }
+        }
+    }
+
+    .menu_chic{
+        &_main, &_contenu{
+            width:95%;    
+        }
+        &_titre{
+            font-size:20px;    
+        }
+        &_entree, &_plat, &_dessert{
+            & img{
+                width:22%;
+            }
+            font-size: 14px;
+            & .plat, .prix{
+                font-size:12px;
+            }
+        }
+    }
+
+    .menu_delice{
+        &_main, &_contenu{
+            width:95%;    
+        }
+        &_titre{
+            font-size:30px;    
+        }
+        &_entree, &_plat, &_dessert{
+            & img{
+                width:25%;
+            }
+            font-size: 15px;
+            & .plat, .prix{
+                font-size:12px;
+            }
+        }
+    }
+
+    .menu_palette{
+        &_main, &_contenu{
+            width:95%;    
+        }
+        &_titre{
+            font-size:30px;    
+        }
+        &_entree, &_plat, &_dessert{
+            & img{
+                width:25%;
+            }
+            font-size: 15px;
+            & .plat, .prix{
+                font-size:12px;
+            }
         }
     }
 }
