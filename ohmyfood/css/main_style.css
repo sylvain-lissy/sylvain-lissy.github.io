@@ -1100,7 +1100,7 @@ footer p:hover {
     font-size: 20px;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 425px) {
   .menu_titre {
     font-size: 15px;
   }
