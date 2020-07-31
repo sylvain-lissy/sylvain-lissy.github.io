@@ -1,4 +1,4 @@
-@media only screen and  (max-width: 1299px) {
+@media only screen and (max-width: 1299px) {
     .index{
         &_main {
         width:100%;
@@ -8,7 +8,6 @@
             width:46%;
         }
         &_upcoming{
-            width:40%;
             padding-bottom: 5%;
         }
     }
@@ -65,23 +64,21 @@
     header {
         height:100px;
         h1{
-        font-size:3.75em;
+            font-size:3.75em;
         }
     }
     footer {
         height:30px;
         p{
-        font-size:12px;        
+            font-size:12px;        
         }
     }
     .index{
         &_main {
-        //     @include  Center_elements($Direction: column);
-        width:90%;
+            width:90%;
         }
         &_menu {
             width: 45%;
-            //width:77.4%;
             height:500px;
             &-detail{
                 height:500px;
@@ -125,12 +122,32 @@
             }
         }
         &_upcoming{
-            width:45%;
+            width:50%;
         }
     }
+    .menu_note{
+        &_entree, &_plat, &_dessert{
+            font-size: 30px;
+            &--contenu{
+                .plat, .prix {
+                   font-size: 20px;
+                }
+            }
+        }
+    } 
+    .menu_chic{
+        &_entree, &_plat, &_dessert{
+            font-size: 20px;
+            &--contenu{
+                .plat, .prix {
+                   font-size: 15px;
+                }
+            }
+        }
+    }    
     .menu_delice{
         &_titre{
-            font: 60px $fnt-delice--1;
+            font-size: 60px;
         }
         &_entree, &_plat, &_dessert{
             font-size: 24px;
@@ -146,10 +163,10 @@
     }
     .menu_palette{
         &_titre{
-            font: 60px $fnt-palette--1; 
+            font-size: 60px;
         }
         &_entree, &_plat, &_dessert{
-             font-size: 25px;
+            font-size: 25px;
             &--contenu{
                 .plat{
                     font-size: 15px;
@@ -164,7 +181,9 @@
 
 @media only screen and (max-width : 425px) {
     .menu_titre{
-        font-size: 15px;
+        & h2 {
+            font-size: 25px;
+        }
     }
     .index{
         &_main, &_contenu{
@@ -186,16 +205,26 @@
             &:nth-child(2) {
                 .index_menu{
                     &-nom{
-                        font-size:25px;
+                        font-size:20px;
                     }
                     &-soustitre{
                         font-size:50px;
                     }
                 }
             }
+            &:nth-child(4) {
+                .index_menu{
+                    &-nom{
+                        font-size: 30px;
+                    }
+                }
+            }
         }
         &_upcoming{
             width:95%;
+            &-detail {
+                width: 95%;
+            }
         }
     }
     .legal{
@@ -216,8 +245,7 @@
     }
     .menu_note{
         &_main, &_contenu{
-            width:95%;  
-            padding-bottom: 10%;  
+            width:95%;   
         }
         &_titre{
             & h3{
@@ -248,10 +276,11 @@
     .menu_chic{
         &_main, &_contenu{
             width:95%;    
-            padding-bottom: 10%;
         }
         &_titre{
-            font-size:20px;    
+            & h3{
+                font-size:25px;    
+            }
         }
         &_entree, &_plat, &_dessert{
             & img{
@@ -266,10 +295,11 @@
     .menu_delice{
         &_main, &_contenu{
             width:95%;    
-            padding-bottom: 10%;
         }
         &_titre{
-            font-size:30px;    
+            & h3{
+                font-size:35px;   
+            }
         }
         &_entree, &_plat, &_dessert{
             & img{
@@ -284,10 +314,11 @@
     .menu_palette{
         &_main, &_contenu{
             width:95%;    
-            padding-bottom: 10%;
         }
         &_titre{
-            font-size:30px;    
+            & h3{
+                font-size:35px;    
+            }
         }
         &_entree, &_plat, &_dessert{
             & img{

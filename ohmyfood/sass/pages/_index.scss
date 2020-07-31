@@ -62,8 +62,8 @@
         &-loading{
             @include Center_elements;
             margin: .87rem 0 0 .37rem;
-            width: .25rem;
-            height: .25rem;
+            width: 4px;
+            height: 4px;
             border-radius: 50%;
             background-color: $txt-color;
             animation: anim_btn_opacity $anim_btn_duree ease-in-out infinite;
