@@ -24,7 +24,11 @@
 }
 
 @mixin Box-Shadow($Shadow: #999){
-    box-shadow: 0 0 10px $Shadow;
+    box-shadow: 0 0 .65rem $Shadow;
+}
+
+@mixin Degrade_note{
+    color: $clr_menu_note--1;
 }
 
 @mixin Degrade_chic{

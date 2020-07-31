@@ -1,82 +1,41 @@
 .menu_note{
-    &_main{
-        @include Center_elements($Direction:column);
-        width:80%;
-    }
-    &_contenu{
-        margin: 3%;
-        padding: 3%;
-        background-color: $clr_menu_note--bg;
-        @include Box-Shadow;
-        width: 70%;
-    }
     &_titre{
-        @include Center_elements ($Direction: column);
-        & h3{
-            font:normal 60px $fnt-note--1;
-            color: $clr_menu_note--1;
-            margin: auto;
-        }
+        @include Degrade_note;
     }
-    &_entree, &_plat{
-        @include Center_elements($Direction:column);
-        font: 34px $fnt-note--2;
-        padding: 5% 0;
-        &--titre{
-            @include Center_elements($Justify:space-between);
-            width:100%;
-            color: $clr_menu_note--1;
-            & h4{
-                @include Underline ($clr_menu_note--1);
-                &:hover{
-                    background-size: 100% 100%;
-                }
-            }
-            & img{
-                width: 30%;
-            }
-        }
-        &--contenu{
-            @include Center_elements($Direction: row, $Justify:space-between);
-            flex-wrap: wrap;
-            width:90%;
-            color: $clr_menu_note--1;
-            font-size: 20px;
-            .plat{
-                width:70%;
-            }
-            .prix{
-                width:20%;
-                text-align: right;
-            }
-        }
-    }
-    &_dessert{
-        @include Center_elements($Direction:column);
-        font: 25px $fnt-note--2;
-        padding: 5% 0;
-        &--titre{
-            @include Center_elements($Justify:space-between);
-            width:100%;
-            color: $clr_menu_note--1;
-            & h4{
-                @include Underline ($clr_menu_chic--1);
-                &:hover{
-                    background-size: 100% 100%;
-                }
-            }
-            & img{
-                width: 30%;
-            }
-        }
-        &--contenu{
-            @include Center_elements($Align: flex-start, $Direction: column);
-            flex-wrap: wrap;
-            width:90%;
-            color: $clr_menu_note--1;
-            font-size: 20px;
-            .plat{
+    @each $etape,$taille in ('entree': 70%, 'plat':70%, 'dessert': 100%){
+        &_#{$etape}{
+            @include Center_elements($Direction:column);
+            font-family: $fnt-note--2;
+            font-size:  2.4rem;
+            padding: 5% 0;
+            &--titre{
+                @include Center_elements($Justify:space-between);
                 width:100%;
+                color: $clr_menu_note--1;
+                & h4{
+                    @include Underline ($clr_menu_note--1);
+                    &:hover{
+                        background-size: 100% 100%;
+                    }
+                }
+                & img{
+                    width: 30%;
+                }
+            }
+            &--contenu{
+                @include Center_elements($Direction: row, $Justify:space-between);
+                flex-wrap: wrap;
+                width:80%;
+                color: $clr_menu_note--1;
+                .plat{
+                    width:$taille;
+                    font-size: 1.6rem;
+                }
+                .prix{
+                    width:20%;
+                    font-size: 1.6rem;
+                    text-align: right;
+                }
             }
         }
     }
@@ -84,9 +43,9 @@
         @include Center_elements;
         margin: 5%;      
         & h3{
-            font: normal 40px $fnt-note--1;
+            font: normal 2.5rem $fnt-note--1;
             color: $clr_menu_note--1;
-            padding-left: 10px;
+            padding-left: 2%;
         }
         & img{
             width: 7%;

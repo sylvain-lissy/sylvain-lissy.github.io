@@ -1,112 +1,41 @@
 .menu_chic{
-    &_main{
-        @include Center_elements($Direction:column);
-        width:80%;
-    }
-    &_contenu{
-        margin: 3%;
-        padding: 3%;
-        background-color: $clr_menu_chic--bg;
-        @include Box-Shadow;
-        width: 70%;
-    }
     &_titre{
-        @include Center_elements;
-        font: 30px $fnt-chic--1;
         @include Degrade_chic;
     }
-    &_entree{
-        @include Center_elements($Direction:column);
-        font: 25px $fnt-chic--2;
-        padding: 5% 0;
-        &--titre{
-            @include Center_elements($Justify:space-between);
-            width:100%;
-            color: $clr_menu_chic--1;
-            & h4{
-                @include Underline ($clr_menu_chic--1);
-                &:hover{
-                    background-size: 100% 100%;
-                }
-            }
-            & img{
-                width: 30%;
-            }
-        }
-        &--contenu{
-            @include Center_elements($Direction: row, $Justify:space-between);
-            flex-wrap: wrap;
-            width:90%;
-            color: $clr_menu_chic--1;
-            font-size: 20px;
-            .plat{
-                width:70%;
-            }
-            .prix{
-                width:20%;
-                text-align: right;
-            }
-        }
-    }
-    &_plat{
-        @include Center_elements($Direction:column);
-        font: 25px $fnt-chic--2;
-        padding: 5% 0;
-        &--titre{
-            @include Center_elements($Justify:space-between);
-            width:100%;
-            color: $clr_menu_chic--2;
-            & h4{
-                @include Underline ($clr_menu_chic--2);
-                &:hover{
-                    background-size: 100% 100%;
-                }
-            }
-            & img{
-                width: 30%;
-            }
-        }
-        &--contenu{
-            @include Center_elements($Direction: row, $Justify:space-between);
-            flex-wrap: wrap;
-            width:90%;
-            color: $clr_menu_chic--2;
-            font-size: 20px;
-            .plat{
-                width:70%;
-            }
-            .prix{
-                width:20%;
-                text-align: right;
-            }
-        }
-    }
-    &_dessert{
-        @include Center_elements($Direction:column);
-        font: 25px $fnt-chic--2;
-        padding: 5% 0;
-        &--titre{
-            @include Center_elements($Justify:space-between);
-            width:100%;
-            color: $clr_menu_chic--3;
-            & h4{
-                @include Underline ($clr_menu_chic--3);
-                &:hover{
-                    background-size: 100% 100%;
-                }
-            }
-            & img{
-                width: 30%;
-            }
-        }
-        &--contenu{
-            @include Center_elements($Direction: row, $Justify:space-between);
-            flex-wrap: wrap;
-            width:90%;
-            color: $clr_menu_chic--3;
-            font-size: 20px;
-            .plat{
+    @each $etape, $couleur, $taille in (entree,$clr_menu_chic--1, 70%), 
+                                       (plat,$clr_menu_chic--2, 70%), 
+                                       (dessert, $clr_menu_chic--3,100%){
+        &_#{$etape}{
+            @include Center_elements($Direction:column);
+            font: 1.75rem $fnt-chic--2;
+            padding: 5% 0;
+            &--titre{
+                @include Center_elements($Justify:space-between);
                 width:100%;
+                color: $couleur;
+                & h4{
+                    @include Underline ($couleur);
+                    &:hover{
+                        background-size: 100% 100%;
+                    }
+                }
+                & img{
+                    width: 30%;
+                }
+            }
+            &--contenu{
+                @include Center_elements($Direction: row, $Justify:space-between);
+                flex-wrap: wrap;
+                width:80%;
+                color: $couleur;
+                font-size: 1.25rem;
+                .plat{
+                    width: $taille;
+                }
+                .prix{
+                    width:20%;
+                    text-align: right;
+                }
             }
         }
     }

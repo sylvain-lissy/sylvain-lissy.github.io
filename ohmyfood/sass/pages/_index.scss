@@ -12,7 +12,7 @@
         &-detail {
             @include Center_elements($Direction: column);
             width:100%;
-            height:700px;
+            height:44rem;
             &:hover {
                 @include Effet_Popout;
             }
@@ -24,56 +24,22 @@
         &-soustitre{
             margin:0;
         }
-        &:nth-child(1) {
-            background-color: $clr_menu_note--bg;
-            .index_menu{
-                &-nom{
-                    font: 50px $fnt-note--1;
-                    color: $clr_menu_note--1;
-                }
-                &-soustitre{
-                    font: italic 50px $fnt-note--2 ;
-                    text-transform: uppercase;
-                    color: $clr_menu_note--1;
-                }
-            }
-        }
-        &:nth-child(2) {
-            background-color: $clr_menu_chic--bg;
-            .index_menu{
-                &-nom{
-                    font: 30px $fnt-chic--1;
-                    @include Degrade_chic;
-                }
-                &-soustitre{
-                    font: 60px $fnt-chic--2;
-                    color: $clr_menu_chic--1;
-                }
-            }
-        }
-        &:nth-child(3) {
-            background-color: $clr_menu_delice--bg;
-            .index_menu{
-                &-nom{
-                    font: 40px $fnt-delice--1;
-                    @include Degrade_delice;
-                }
-                &-soustitre{
-                    font: 60px $fnt-delice--2;
-                    color: $clr_menu_delice--2;
-                }
-            }
-        }
-        &:nth-child(4) {
-            background-color: $clr_menu_palette--bg;
-            .index_menu{
-                &-nom{
-                    font: 40px $fnt-palette--1;
-                    @include Degrade-palette;
-                }
-                &-soustitre{
-                    font: 60px $fnt-palette--2;
-                    color: $clr_menu_palette--2;
+        @each $resto, $resto-bg, $resto-nom-fnt, $resto-nom-clr, $resto-soustitre-fnt, $resto-soustitre-clr in
+            (1, $clr_menu_note--bg, 3.15rem $fnt-note--1, $clr_menu_note--1, italic 3.15rem $fnt-note--2, $clr_menu_note--1),
+            (2, $clr_menu_chic--bg, 1.90rem $fnt-chic--1, $clr_menu_chic--1,        3.75rem $fnt-chic--2, $clr_menu_chic--1),
+            (3, $clr_menu_delice--bg, 2.5rem $fnt-delice--1,$clr_menu_delice--1,3.75rem $fnt-delice--2, $clr_menu_delice--2),
+            (4, $clr_menu_palette--bg,2.5rem $fnt-palette--1,$clr_menu_palette--1,3.75rem $fnt-palette--2, $clr_menu_palette--2){
+            &:nth-child(#{$resto}) {
+                background-color: $resto-bg;
+                .index_menu{
+                    &-nom{
+                        font: $resto-nom-fnt;
+                        color: $resto-nom-clr;
+                    }
+                    &-soustitre{
+                        font: $resto-soustitre-fnt;
+                        color: $resto-soustitre-clr;
+                    }
                 }
             }
         }
@@ -85,19 +51,19 @@
         &-detail {
             @include Center_elements($Direction: row);
             width:80%;
-            height:40px;
+            height:2.5rem;
             background-color: $bg-color;
-            border-radius: 15px;
+            border-radius: 1rem;
         }
         &-txt{
-            font: 25px $fnt-header-footer;
+            font: 1.6rem $fnt-header-footer;
             color: $txt-color;
         }
         &-loading{
             @include Center_elements;
-            margin: 14px 0 0 6px;
-            width: 4px;
-            height: 4px;
+            margin: .87rem 0 0 .37rem;
+            width: .25rem;
+            height: .25rem;
             border-radius: 50%;
             background-color: $txt-color;
             animation: anim_btn_opacity $anim_btn_duree ease-in-out infinite;

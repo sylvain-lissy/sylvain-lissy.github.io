@@ -65,7 +65,7 @@
     header {
         height:100px;
         h1{
-        font-size:60px;
+        font-size:3.75em;
         }
     }
     footer {
@@ -76,10 +76,12 @@
     }
     .index{
         &_main {
-            @include  Center_elements($Direction: column);
+        //     @include  Center_elements($Direction: column);
+        width:90%;
         }
         &_menu {
-            width:77.4%;
+            width: 45%;
+            //width:77.4%;
             height:500px;
             &-detail{
                 height:500px;

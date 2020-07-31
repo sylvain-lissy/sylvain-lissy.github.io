@@ -1,5 +1,8 @@
 // STYLE PRINCIPAL POUR TOUTES LES PAGES //
+html {font-size:100%;}
+
 body {
+    font-size: 1rem;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -17,38 +20,36 @@ header, footer{
         font-family:$fnt-header-footer;  
     }
 }
-
 header{
-    height:150px;
+    height: 9rem;
     @include Center_elements($Direction: column);
     & h1{
-        font-size: 100px;
-        letter-spacing: -6px;
+        font-size: 6.25rem;
+        letter-spacing: -.35rem;
         color:$txt-color;
         font-family:$fnt-header-footer;  
     }
 }
-
 main{
     margin: 0;
     padding: 0;
     width:80%;
 }
-
 footer{
     position:fixed;
-    height:50px;
+    height: 3rem;
     bottom:0;
     @include Center_elements($Justify: space-between);
     & p{
         padding: 0 2%;
-        font-size: 20px;
+        font-size: 1.25rem;
         &:hover{
             animation: footer_wiggle_effect 300ms ease-in-out 1;
         }
     }
 }
-
 .menu_titre{
-    font: 30px $fnt-header-footer;
+    & h2{
+        font: 3rem $fnt-header-footer;
+    }
 }

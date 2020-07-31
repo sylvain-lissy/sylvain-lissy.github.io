@@ -1,0 +1,26 @@
+@each $resto, $couleur, $sens,$taille in 
+                            (note, $clr_menu_note--bg, column, normal 3.8rem $fnt-note--1), 
+                            (chic, $clr_menu_chic--bg, row, 2.5em $fnt-chic--1), 
+                            (delice, $clr_menu_delice--bg, row,4.5rem $fnt-delice--1), 
+                            (palette, $clr_menu_palette--bg, row, 4.5rem $fnt-palette--1){
+    .menu_#{$resto}{
+        &_main{
+            @include Center_elements($Direction:column);
+            width:80%;
+        }
+        &_contenu{
+            @include Box-Shadow;            
+            width: 70%;
+            margin: 3%;
+            padding: 3%;
+            background-color: $couleur;
+        }
+        &_titre{
+            @include Center_elements($Direction:$sens);
+            & h3{
+                font: $taille;
+                margin: auto;
+            }
+        }
+    }
+}
