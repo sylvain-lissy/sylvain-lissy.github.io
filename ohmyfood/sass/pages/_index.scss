@@ -3,7 +3,7 @@
     @include Center_elements($Direction: row);
     flex-wrap: wrap;
     width: 70%;
-    padding: 3%;
+    padding: 0;
     }
     &_menu {
         @include Box-Shadow;
@@ -24,17 +24,16 @@
         &-soustitre{
             margin:0;
         }
-        @each $resto, $resto-bg, $resto-nom-fnt, $resto-nom-clr, $resto-soustitre-fnt, $resto-soustitre-clr in
-            (1, $clr_menu_note--bg, 3.15rem $fnt-note--1, $clr_menu_note--1, italic 3.15rem $fnt-note--2, $clr_menu_note--1),
-            (2, $clr_menu_chic--bg, 1.90rem $fnt-chic--1, $clr_menu_chic--1,        3.75rem $fnt-chic--2, $clr_menu_chic--1),
-            (3, $clr_menu_delice--bg, 2.5rem $fnt-delice--1,$clr_menu_delice--1,3.75rem $fnt-delice--2, $clr_menu_delice--2),
-            (4, $clr_menu_palette--bg,2.5rem $fnt-palette--1,$clr_menu_palette--1,3.75rem $fnt-palette--2, $clr_menu_palette--2){
+        @each $resto, $resto-bg, $resto-nom-fnt, $resto-soustitre-fnt, $resto-soustitre-clr in
+            (1, $clr_menu_note--bg,    3.15rem $fnt-note--1,   italic 3.15rem $fnt-note--2, $clr_menu_note--1),
+            (2, $clr_menu_chic--bg,    1.90rem $fnt-chic--1,   3.75rem $fnt-chic--2,        $clr_menu_chic--1),
+            (3, $clr_menu_delice--bg,  2.5rem $fnt-delice--1,  3.75rem $fnt-delice--2,      $clr_menu_delice--2),
+            (4, $clr_menu_palette--bg, 2.5rem $fnt-palette--1, 3.75rem $fnt-palette--2,     $clr_menu_palette--2){
             &:nth-child(#{$resto}) {
                 background-color: $resto-bg;
                 .index_menu{
                     &-nom{
                         font: $resto-nom-fnt;
-                        color: $resto-nom-clr;
                     }
                     &-soustitre{
                         font: $resto-soustitre-fnt;
@@ -43,17 +42,38 @@
                 }
             }
         }
+        &:nth-child(1){
+            .index_menu-nom{
+                @include Degrade_note;
+            }
+        }
+        &:nth-child(2){
+            .index_menu-nom{
+                @include Degrade_chic;
+            }
+        }
+        &:nth-child(3){
+            .index_menu-nom{
+                @include Degrade_delice;
+            }
+        }
+        &:nth-child(4){
+            .index_menu-nom{
+                @include Degrade_palette;
+            }
+        }
     }
     &_upcoming{
         @include Center_elements;
         width:40%;
         margin: 2%;
+        padding-bottom: 5%;
         &-detail {
             @include Center_elements($Direction: row);
             width:80%;
-            height:2.5rem;
+            height:40px;
             background-color: $bg-color;
-            border-radius: 1rem;
+            border-radius: 15px;
         }
         &-txt{
             font: 1.6rem $fnt-header-footer;
@@ -61,7 +81,7 @@
         }
         &-loading{
             @include Center_elements;
-            margin: .87rem 0 0 .37rem;
+            margin: 14px 0 0 6px;
             width: 4px;
             height: 4px;
             border-radius: 50%;

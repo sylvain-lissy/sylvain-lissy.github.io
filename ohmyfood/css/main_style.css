@@ -160,17 +160,19 @@ html {
 }
 
 body {
-  font-size: 1rem;
-  margin: 0;
-  padding: 0;
-  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: white;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 a {
+  color: #FDCB46;
+  font-family: "Montserrat";
   text-decoration: none;
 }
 
@@ -178,23 +180,18 @@ header, footer {
   width: 100%;
   background-color: #569c87;
 }
-header a, footer a {
-  color: #FDCB46;
-  font-family: "Montserrat";
-}
 
 header {
-  height: 9rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 145px;
 }
 header h1 {
-  font-size: 6.25rem;
+  font: 6.25rem "Montserrat";
   letter-spacing: -0.35rem;
   color: #FDCB46;
-  font-family: "Montserrat";
 }
 
 main {
@@ -204,13 +201,13 @@ main {
 }
 
 footer {
-  position: fixed;
-  height: 3rem;
-  bottom: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  height: 3rem;
+  bottom: 0;
 }
 footer p {
   padding: 0 2%;
@@ -231,7 +228,7 @@ footer p:hover {
   justify-content: center;
   flex-wrap: wrap;
   width: 70%;
-  padding: 3%;
+  padding: 0;
 }
 .index_menu {
   box-shadow: 0 0 0.65rem #999;
@@ -262,7 +259,6 @@ footer p:hover {
 }
 .index_menu:nth-child(1) .index_menu-nom {
   font: 3.15rem "Devonshire";
-  color: #3D1319;
 }
 .index_menu:nth-child(1) .index_menu-soustitre {
   font: italic 3.15rem "Itim";
@@ -273,7 +269,6 @@ footer p:hover {
 }
 .index_menu:nth-child(2) .index_menu-nom {
   font: 1.9rem "Croissant One";
-  color: #C67412;
 }
 .index_menu:nth-child(2) .index_menu-soustitre {
   font: 3.75rem "DM Serif Text";
@@ -284,7 +279,6 @@ footer p:hover {
 }
 .index_menu:nth-child(3) .index_menu-nom {
   font: 2.5rem "Dancing Script";
-  color: #0228DD;
 }
 .index_menu:nth-child(3) .index_menu-soustitre {
   font: 3.75rem "Kalam";
@@ -295,11 +289,28 @@ footer p:hover {
 }
 .index_menu:nth-child(4) .index_menu-nom {
   font: 2.5rem "Kaushan Script";
-  color: #3D923A;
 }
 .index_menu:nth-child(4) .index_menu-soustitre {
   font: 3.75rem "Kalam";
   color: #8DD565;
+}
+.index_menu:nth-child(1) .index_menu-nom {
+  color: #3D1319;
+}
+.index_menu:nth-child(2) .index_menu-nom {
+  background: -webkit-linear-gradient(110deg, #6E4CCC 0%, #A56799 40%, #C67412 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.index_menu:nth-child(3) .index_menu-nom {
+  background: -webkit-linear-gradient(110deg, #229DF9, #0670F3, #0228DD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.index_menu:nth-child(4) .index_menu-nom {
+  background: -webkit-linear-gradient(110deg, #B8FA7C 30%, #3D923A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .index_upcoming {
   display: flex;
@@ -308,6 +319,7 @@ footer p:hover {
   justify-content: center;
   width: 40%;
   margin: 2%;
+  padding-bottom: 5%;
 }
 .index_upcoming-detail {
   display: flex;
@@ -315,9 +327,9 @@ footer p:hover {
   align-items: center;
   justify-content: center;
   width: 80%;
-  height: 2.5rem;
+  height: 40px;
   background-color: #569c87;
-  border-radius: 1rem;
+  border-radius: 15px;
 }
 .index_upcoming-txt {
   font: 1.6rem "Montserrat";
@@ -328,7 +340,7 @@ footer p:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 0.87rem 0 0 0.37rem;
+  margin: 14px 0 0 6px;
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -374,8 +386,6 @@ footer p:hover {
   text-decoration: underline;
 }
 .legal_contenu a {
-  color: #FDCB46;
-  text-decoration: none;
   text-decoration: none;
   background: linear-gradient(to top, #FDCB46 0%, #FDCB46 5%, transparent 1%) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
@@ -432,14 +442,13 @@ footer p:hover {
   flex-wrap: wrap;
   width: 80%;
   color: #3D1319;
+  font-size: 1.6rem;
 }
 .menu_note_entree--contenu .plat {
   width: 70%;
-  font-size: 1.6rem;
 }
 .menu_note_entree--contenu .prix {
   width: 20%;
-  font-size: 1.6rem;
   text-align: right;
 }
 .menu_note_plat {
@@ -478,14 +487,13 @@ footer p:hover {
   flex-wrap: wrap;
   width: 80%;
   color: #3D1319;
+  font-size: 1.6rem;
 }
 .menu_note_plat--contenu .plat {
   width: 70%;
-  font-size: 1.6rem;
 }
 .menu_note_plat--contenu .prix {
   width: 20%;
-  font-size: 1.6rem;
   text-align: right;
 }
 .menu_note_dessert {
@@ -524,14 +532,13 @@ footer p:hover {
   flex-wrap: wrap;
   width: 80%;
   color: #3D1319;
+  font-size: 1.6rem;
 }
 .menu_note_dessert--contenu .plat {
   width: 100%;
-  font-size: 1.6rem;
 }
 .menu_note_dessert--contenu .prix {
   width: 20%;
-  font-size: 1.6rem;
   text-align: right;
 }
 .menu_note_footer {
@@ -690,7 +697,7 @@ footer p:hover {
 }
 
 .menu_delice_titre {
-  background: -webkit-linear-gradient(100deg, #229DF9, #0670F3, #0228DD);
+  background: -webkit-linear-gradient(110deg, #229DF9, #0670F3, #0228DD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -980,54 +987,112 @@ footer p:hover {
 @media only screen and (max-width: 1299px) {
   .index_main {
     width: 100%;
-    padding: 0;
   }
   .index_menu {
     width: 46%;
   }
-  .index_upcoming {
-    padding-bottom: 5%;
-  }
 
-  .menu_note_main, .menu_note_contenu {
+  .menu_note_main, .menu_note_contenu, .menu_chic_main, .menu_chic_contenu, .menu_delice_main, .menu_delice_contenu, .menu_palette_main, .menu_palette_contenu, .legal_main, .legal_contenu {
     width: 85%;
   }
 
-  .menu_chic_main, .menu_chic_contenu {
-    width: 85%;
-  }
-
-  .menu_delice_main, .menu_delice_contenu {
-    width: 85%;
-  }
-  .menu_delice_entree, .menu_delice_plat, .menu_delice_dessert {
+  .menu_delice_entree, .menu_delice_plat, .menu_delice_dessert, .menu_palette_entree, .menu_palette_plat, .menu_palette_dessert {
     font-size: 30px;
   }
-  .menu_delice_entree--contenu .plat, .menu_delice_plat--contenu .plat, .menu_delice_dessert--contenu .plat {
+  .menu_delice_entree--contenu .plat, .menu_delice_plat--contenu .plat, .menu_delice_dessert--contenu .plat, .menu_palette_entree--contenu .plat, .menu_palette_plat--contenu .plat, .menu_palette_dessert--contenu .plat {
     font-size: 25px;
   }
-  .menu_delice_entree--contenu .prix, .menu_delice_plat--contenu .prix, .menu_delice_dessert--contenu .prix {
+  .menu_delice_entree--contenu .prix, .menu_delice_plat--contenu .prix, .menu_delice_dessert--contenu .prix, .menu_palette_entree--contenu .prix, .menu_palette_plat--contenu .prix, .menu_palette_dessert--contenu .prix {
     font-size: 30px;
-  }
-
-  .menu_palette_main, .menu_palette_contenu {
-    width: 85%;
-  }
-  .menu_palette_entree, .menu_palette_plat, .menu_palette_dessert {
-    font-size: 30px;
-  }
-  .menu_palette_entree--contenu .plat, .menu_palette_plat--contenu .plat, .menu_palette_dessert--contenu .plat {
-    font-size: 20px;
-  }
-  .menu_palette_entree--contenu .prix, .menu_palette_plat--contenu .prix, .menu_palette_dessert--contenu .prix {
-    font-size: 25px;
-  }
-
-  .legal_main, .legal_contenu {
-    width: 85%;
   }
 }
 @media only screen and (max-width: 768px) {
+  .index_menu {
+    height: 450px;
+  }
+  .index_menu-detail {
+    height: 450px;
+  }
+  .index_menu:nth-child(1) .index_menu-nom {
+    font-size: 2.8rem;
+  }
+  .index_menu:nth-child(1) .index_menu-soustitre {
+    font-size: 2.8rem;
+  }
+  .index_menu:nth-child(2) .index_menu-nom {
+    font-size: 1.5rem;
+  }
+  .index_menu:nth-child(2) .index_menu-soustitre {
+    font-size: 2.8rem;
+  }
+  .index_menu:nth-child(3) .index_menu-nom {
+    font-size: 2.2rem;
+  }
+  .index_menu:nth-child(3) .index_menu-soustitre {
+    font-size: 2.8rem;
+  }
+  .index_menu:nth-child(4) .index_menu-nom {
+    font-size: 2.2rem;
+  }
+  .index_menu:nth-child(4) .index_menu-soustitre {
+    font-size: 2.8rem;
+  }
+  .index_upcoming {
+    width: 50%;
+  }
+
+  .menu_note_titre h3 {
+    font-size: 3.75rem;
+  }
+  .menu_note_entree, .menu_note_plat, .menu_note_dessert {
+    font-size: 1.85rem;
+  }
+  .menu_note_entree--contenu .plat, .menu_note_plat--contenu .plat, .menu_note_dessert--contenu .plat {
+    font-size: 1.25rem;
+  }
+  .menu_note_entree--contenu .prix, .menu_note_plat--contenu .prix, .menu_note_dessert--contenu .prix {
+    font-size: 1.25rem;
+  }
+
+  .menu_chic_titre h3 {
+    font-size: 2.5rem;
+  }
+  .menu_chic_entree, .menu_chic_plat, .menu_chic_dessert {
+    font-size: 1.25rem;
+  }
+  .menu_chic_entree--contenu .plat, .menu_chic_plat--contenu .plat, .menu_chic_dessert--contenu .plat {
+    font-size: 1rem;
+  }
+  .menu_chic_entree--contenu .prix, .menu_chic_plat--contenu .prix, .menu_chic_dessert--contenu .prix {
+    font-size: 1rem;
+  }
+
+  .menu_delice_titre h3 {
+    font-size: 3.75rem;
+  }
+  .menu_delice_entree, .menu_delice_plat, .menu_delice_dessert {
+    font-size: 1.5rem;
+  }
+  .menu_delice_entree--contenu .plat, .menu_delice_plat--contenu .plat, .menu_delice_dessert--contenu .plat {
+    font-size: 1.25rem;
+  }
+  .menu_delice_entree--contenu .prix, .menu_delice_plat--contenu .prix, .menu_delice_dessert--contenu .prix {
+    font-size: 1.5rem;
+  }
+
+  .menu_palette_titre h3 {
+    font-size: 3.75rem;
+  }
+  .menu_palette_entree, .menu_palette_plat, .menu_palette_dessert {
+    font-size: 1.5rem;
+  }
+  .menu_palette_entree--contenu .plat, .menu_palette_plat--contenu .plat, .menu_palette_dessert--contenu .plat {
+    font-size: 1rem;
+  }
+  .menu_palette_entree--contenu .prix, .menu_palette_plat--contenu .prix, .menu_palette_dessert--contenu .prix {
+    font-size: 1.25rem;
+  }
+
   header {
     height: 100px;
   }
@@ -1039,82 +1104,7 @@ footer p:hover {
     height: 30px;
   }
   footer p {
-    font-size: 12px;
-  }
-
-  .index_main {
-    width: 90%;
-  }
-  .index_menu {
-    width: 45%;
-    height: 500px;
-  }
-  .index_menu-detail {
-    height: 500px;
-  }
-  .index_menu:nth-child(1) .index_menu-nom, .index_menu:nth-child(1) .index_menu-soustitre {
-    font-size: 45px;
-  }
-  .index_menu:nth-child(2) .index_menu-nom {
-    font-size: 24px;
-  }
-  .index_menu:nth-child(2) .index_menu-soustitre {
-    font-size: 45px;
-  }
-  .index_menu:nth-child(3) .index_menu-nom {
-    font-size: 30px;
-  }
-  .index_menu:nth-child(3) .index_menu-soustitre {
-    font-size: 45px;
-  }
-  .index_menu:nth-child(4) .index_menu-nom {
-    font-size: 35px;
-  }
-  .index_menu:nth-child(4) .index_menu-soustitre {
-    font-size: 45px;
-  }
-  .index_upcoming {
-    width: 50%;
-  }
-
-  .menu_note_entree, .menu_note_plat, .menu_note_dessert {
-    font-size: 30px;
-  }
-  .menu_note_entree--contenu .plat, .menu_note_entree--contenu .prix, .menu_note_plat--contenu .plat, .menu_note_plat--contenu .prix, .menu_note_dessert--contenu .plat, .menu_note_dessert--contenu .prix {
-    font-size: 20px;
-  }
-
-  .menu_chic_entree, .menu_chic_plat, .menu_chic_dessert {
-    font-size: 20px;
-  }
-  .menu_chic_entree--contenu .plat, .menu_chic_entree--contenu .prix, .menu_chic_plat--contenu .plat, .menu_chic_plat--contenu .prix, .menu_chic_dessert--contenu .plat, .menu_chic_dessert--contenu .prix {
-    font-size: 15px;
-  }
-
-  .menu_delice_titre {
-    font-size: 60px;
-  }
-  .menu_delice_entree, .menu_delice_plat, .menu_delice_dessert {
-    font-size: 24px;
-  }
-  .menu_delice_entree--contenu .plat, .menu_delice_plat--contenu .plat, .menu_delice_dessert--contenu .plat {
-    font-size: 20px;
-  }
-  .menu_delice_entree--contenu .prix, .menu_delice_plat--contenu .prix, .menu_delice_dessert--contenu .prix {
-    font-size: 24px;
-  }
-
-  .menu_palette_titre {
-    font-size: 60px;
-  }
-  .menu_palette_entree, .menu_palette_plat, .menu_palette_dessert {
-    font-size: 25px;
-  }
-  .menu_palette_entree--contenu .plat, .menu_palette_plat--contenu .plat, .menu_palette_dessert--contenu .plat {
-    font-size: 15px;
-  }
-  .menu_palette_entree--contenu .prix, .menu_palette_plat--contenu .prix, .menu_palette_dessert--contenu .prix {
-    font-size: 20px;
+    font-size: 0.75rem;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -1122,27 +1112,29 @@ footer p:hover {
     font-size: 25px;
   }
 
-  .index_main, .index_contenu {
+  .index_main {
     padding-bottom: 10%;
   }
   .index_menu {
     width: 95%;
-    height: 500px;
   }
-  .index_menu-detail {
-    height: 500px;
+  .index_menu:nth-child(1) .index_menu-nom {
+    font-size: 2.5rem;
   }
-  .index_menu:nth-child(1) .index_menu-nom, .index_menu:nth-child(1) .index_menu-soustitre {
-    font-size: 40px;
+  .index_menu:nth-child(1) .index_menu-soustitre {
+    font-size: 2.5rem;
   }
   .index_menu:nth-child(2) .index_menu-nom {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .index_menu:nth-child(2) .index_menu-soustitre {
-    font-size: 50px;
+    font-size: 3.1rem;
   }
   .index_menu:nth-child(4) .index_menu-nom {
-    font-size: 30px;
+    font-size: 1.85rem;
+  }
+  .index_menu:nth-child(4) .index_menu-soustitre {
+    font-size: 2.8rem;
   }
   .index_upcoming {
     width: 95%;
@@ -1155,35 +1147,35 @@ footer p:hover {
     width: 95%;
   }
   .legal_contenu h2 {
-    font-size: 30px;
+    font-size: 1.85rem;
   }
   .legal_contenu h3 {
-    font-size: 17px;
+    font-size: 1rem;
   }
   .legal_contenu p, .legal_contenu ul {
-    font-size: 10px;
+    font-size: 0.75rem;
   }
 
   .menu_note_main, .menu_note_contenu {
     width: 95%;
   }
   .menu_note_titre h3 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   .menu_note_titre img {
     width: 40%;
   }
   .menu_note_entree, .menu_note_plat, .menu_note_dessert {
-    font-size: 15px;
+    font-size: 0.9rem;
   }
   .menu_note_entree img, .menu_note_plat img, .menu_note_dessert img {
-    width: 25%;
+    width: 22%;
   }
   .menu_note_entree .plat, .menu_note_entree .prix, .menu_note_plat .plat, .menu_note_plat .prix, .menu_note_dessert .plat, .menu_note_dessert .prix {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .menu_note_footer h3 {
-    font-size: 30px;
+    font-size: 1.85rem;
   }
   .menu_note_footer img {
     width: 10%;
@@ -1193,48 +1185,75 @@ footer p:hover {
     width: 95%;
   }
   .menu_chic_titre h3 {
-    font-size: 25px;
+    font-size: 1.5rem;
+  }
+  .menu_chic_titre img {
+    width: 40%;
   }
   .menu_chic_entree, .menu_chic_plat, .menu_chic_dessert {
-    font-size: 14px;
+    font-size: 0.9rem;
   }
   .menu_chic_entree img, .menu_chic_plat img, .menu_chic_dessert img {
     width: 22%;
   }
   .menu_chic_entree .plat, .menu_chic_entree .prix, .menu_chic_plat .plat, .menu_chic_plat .prix, .menu_chic_dessert .plat, .menu_chic_dessert .prix {
-    font-size: 12px;
+    font-size: 0.75rem;
+  }
+  .menu_chic_footer h3 {
+    font-size: 1.85rem;
+  }
+  .menu_chic_footer img {
+    width: 10%;
   }
 
   .menu_delice_main, .menu_delice_contenu {
     width: 95%;
   }
   .menu_delice_titre h3 {
-    font-size: 35px;
+    font-size: 2.2rem;
+  }
+  .menu_delice_titre img {
+    width: 40%;
   }
   .menu_delice_entree, .menu_delice_plat, .menu_delice_dessert {
-    font-size: 15px;
+    font-size: 0.9rem;
   }
   .menu_delice_entree img, .menu_delice_plat img, .menu_delice_dessert img {
-    width: 25%;
+    width: 22%;
   }
   .menu_delice_entree .plat, .menu_delice_entree .prix, .menu_delice_plat .plat, .menu_delice_plat .prix, .menu_delice_dessert .plat, .menu_delice_dessert .prix {
-    font-size: 12px;
+    font-size: 0.75rem;
+  }
+  .menu_delice_footer h3 {
+    font-size: 1.85rem;
+  }
+  .menu_delice_footer img {
+    width: 10%;
   }
 
   .menu_palette_main, .menu_palette_contenu {
     width: 95%;
   }
   .menu_palette_titre h3 {
-    font-size: 35px;
+    font-size: 2.2rem;
+  }
+  .menu_palette_titre img {
+    width: 40%;
   }
   .menu_palette_entree, .menu_palette_plat, .menu_palette_dessert {
-    font-size: 15px;
+    font-size: 0.9rem;
   }
   .menu_palette_entree img, .menu_palette_plat img, .menu_palette_dessert img {
-    width: 25%;
+    width: 22%;
   }
   .menu_palette_entree .plat, .menu_palette_entree .prix, .menu_palette_plat .plat, .menu_palette_plat .prix, .menu_palette_dessert .plat, .menu_palette_dessert .prix {
-    font-size: 12px;
+    font-size: 0.75rem;
+  }
+  .menu_palette_footer h3 {
+    font-size: 1.85rem;
+  }
+  .menu_palette_footer img {
+    width: 10%;
   }
 }
 

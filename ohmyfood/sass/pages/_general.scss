@@ -1,46 +1,49 @@
 // STYLE PRINCIPAL POUR TOUTES LES PAGES //
-html {font-size:100%;}
+html {
+    font-size:100%;
+}
 
 body {
+    @include Center_elements($Direction: column);
+    background-color: white;
     font-size: 1rem;
     margin: 0;
     padding: 0;
-    background-color: white;
-    @include Center_elements($Direction: column);
 }
+
 a{
+    color:$txt-color;
+    font-family:$fnt-header-footer;  
     text-decoration: none;
 }
 
 header, footer{
     width:100%;
     background-color: $bg-color;
-    & a{
-        color:$txt-color;
-        font-family:$fnt-header-footer;  
-    }
 }
+
 header{
-    height: 9rem;
     @include Center_elements($Direction: column);
-    & h1{
-        font-size: 6.25rem;
+    height: 145px;
+    h1{
+        font: 6.25rem $fnt-header-footer;
         letter-spacing: -.35rem;
         color:$txt-color;
-        font-family:$fnt-header-footer;  
     }
 }
+
 main{
     margin: 0;
     padding: 0;
     width:80%;
 }
+
 footer{
+    @include Center_elements($Justify: space-between);
     position:fixed;
     height: 3rem;
     bottom:0;
-    @include Center_elements($Justify: space-between);
-    & p{
+    p{
         padding: 0 2%;
         font-size: 1.25rem;
         &:hover{
@@ -48,8 +51,9 @@ footer{
         }
     }
 }
+
 .menu_titre{
-    & h2{
+    h2{
         font: 3rem $fnt-header-footer;
     }
 }

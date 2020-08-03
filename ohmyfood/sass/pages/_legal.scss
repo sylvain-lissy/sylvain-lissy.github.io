@@ -13,31 +13,29 @@
         font-family: $fnt-header-footer;
         color: $clr_mention--txt;
         width: 70%;
-        & h2{
+        h2{
             color:$bg_color;
             font-size: 2.2rem;
             text-align: center;
         }
-        & h3{
+        h3{
             color:$bg_color;
             font-size: 1.6rem;
             text-decoration: underline;    
         }
         & a{
-            color:$txt_color;
-            text-decoration: none;
             @include Underline($txt_color);
             &:hover{
                 background-size: 100% 100%;
             }           
         }
-        & strong{
+        strong{
             text-decoration: underline;
         }
-        & p{
+        p{
             text-align: justify;
         }
-        & span{
+        span{
             font-style: italic;    
         }        
     }

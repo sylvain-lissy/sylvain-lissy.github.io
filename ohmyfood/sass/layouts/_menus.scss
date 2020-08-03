@@ -1,4 +1,4 @@
-@each $resto, $couleur, $sens,$taille in 
+@each $resto, $couleur, $sens, $taille in 
                             (note, $clr_menu_note--bg, column, normal 3.8rem $fnt-note--1), 
                             (chic, $clr_menu_chic--bg, row, 2.5em $fnt-chic--1), 
                             (delice, $clr_menu_delice--bg, row,4.5rem $fnt-delice--1), 

@@ -19,12 +19,16 @@
 @mixin Menu_Gradient($colorA: #000, $colorB: #000) {
     background: $colorA;
     background: linear-gradient(125deg, $colorA 0%, $colorB 90%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include Webkit_Degrade;
 }
 
 @mixin Box-Shadow($Shadow: #999){
     box-shadow: 0 0 .65rem $Shadow;
+}
+
+@mixin Webkit_Degrade{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @mixin Degrade_note{
@@ -33,18 +37,15 @@
 
 @mixin Degrade_chic{
     background:  -webkit-linear-gradient(110deg, $clr_menu_chic--3 0%,$clr_menu_chic--2 40%, $clr_menu_chic--1 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+    @include Webkit_Degrade;
 }
 
 @mixin Degrade_delice{
-    background: -webkit-linear-gradient(100deg,$clr_menu_delice--3,$clr_menu_delice--2,$clr_menu_delice--1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(110deg,$clr_menu_delice--3,$clr_menu_delice--2,$clr_menu_delice--1);
+    @include Webkit_Degrade;
 }
 
 @mixin Degrade_palette{
     background: -webkit-linear-gradient(110deg,$clr_menu_palette--3 30%, $clr_menu_palette--1 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+    @include Webkit_Degrade;
 }

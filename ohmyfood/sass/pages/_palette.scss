@@ -12,13 +12,13 @@
                 @include Center_elements($Justify:space-between);
                 width:100%;
                 color: $txt-basic;
-                & h4{
+                h4{
                     @include Underline ($couleur);
                     &:hover{
                         background-size: 100% 100%;
                     }
                 }
-                & img{
+                img{
                     width: 30%;
                 }
             }

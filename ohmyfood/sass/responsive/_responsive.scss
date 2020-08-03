@@ -1,0 +1,173 @@
+@media only screen and (max-width: 1299px) {
+    .index{
+        &_main {
+        width:100%;
+        }
+        &_menu {
+            width:46%;
+        }
+    }
+    .menu_note, .menu_chic, .menu_delice, .menu_palette, .legal{
+        &_main, &_contenu{
+            width:85%;    
+        }
+    }
+    .menu_delice, .menu_palette{
+        &_entree, &_plat, &_dessert{
+            font-size: 30px;
+            &--contenu{
+                .plat{
+                    font-size: 25px;
+                }
+                .prix{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .index{
+        &_menu {
+            height:450px;
+            &-detail{
+                height:450px;
+            }
+            @each $enfant, $taille in (1,2.8), (2,1.5), (3,2.2), (4,2.2){
+                &:nth-child(#{$enfant}) {
+                    .index_menu{
+                        &-nom{
+                            font-size: #{$taille}rem;
+                        }
+                        &-soustitre{
+                            font-size: 2.8rem;
+                        }
+                    }
+                }
+            }
+        }
+        &_upcoming{
+            width:50%;
+        }
+    }
+    @each $resto, $taille1, $taille2, $taille3, $taille4 in 
+            (note,3.75,1.85,1.25,1.25), (chic,2.5,1.25,1,1),(delice,3.75,1.5,1.25,1.5),(palette,3.75,1.5,1,1.25){
+        .menu_#{$resto}{
+            &_titre{
+                h3 {
+                    font-size: #{$taille1}rem;
+                }
+            }
+            &_entree, &_plat, &_dessert{
+                font-size: #{$taille2}rem;
+                &--contenu{
+                    .plat{
+                    font-size: #{$taille3}rem;
+                    }
+                    .prix{
+                    font-size: #{$taille4}rem;
+                    }
+                }
+            }
+        }
+    }
+    header {
+        height:100px;
+        h1{
+            font-size:3.75em;
+        }
+    }
+    footer {
+        height:30px;
+        p{
+            font-size:.75rem;        
+        }
+    }
+}
+
+@media only screen and (max-width : 425px) {
+    .menu_titre{
+        & h2 {
+            font-size: 25px;
+        }
+    }
+    .index{
+        &_main{
+            padding-bottom: 10%;
+        }
+        &_menu {
+            width:95%;
+            @each $enfant, $taille1, $taille2 in (1,2.5,2.5),(2,1.25,3.1),(4,1.85,2.8){
+                &:nth-child(#{$enfant}) {
+                    .index_menu{
+                        &-nom{
+                            font-size: #{$taille1}rem;
+                        }
+                        &-soustitre{
+                            font-size: #{$taille2}rem;
+                        }
+                    }
+                }
+            }
+        }
+        &_upcoming{
+            width:95%;
+            &-detail {
+                width: 95%;
+            }
+        }
+    }
+    .legal{
+        &_main, &_contenu{
+            width:95%;    
+        }
+        &_contenu{
+            & h2{
+                font-size: 1.85rem;
+            }
+            & h3{
+                font-size: 1rem;
+            }
+            & p, & ul{
+                font-size: .75rem;
+            }
+        }
+    }
+    @each $resto, $taille in
+    (note, 	2.5),
+    (chic,	1.5),
+    (delice,	2.2),
+    (palette,	2.2){
+        .menu_#{$resto}{
+            &_main, &_contenu{
+                width:95%;   
+            }
+            &_titre{
+                & h3{
+                    font-size: #{$taille}rem;
+                }
+                & img{
+                    width:40%;
+                }
+            }
+            &_entree, &_plat, &_dessert{
+                & img{
+                    width:22%;
+                }
+                font-size: .9rem;
+                & .plat, .prix{
+                    font-size: .75rem;
+                }     
+            }
+            &_footer{
+                & h3{
+                    font-size: 1.85rem;
+                }
+                & img{
+                    width:10%;
+                }
+            }
+        }
+    }
+}

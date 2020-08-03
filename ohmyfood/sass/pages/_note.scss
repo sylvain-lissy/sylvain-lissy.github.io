@@ -12,13 +12,13 @@
                 @include Center_elements($Justify:space-between);
                 width:100%;
                 color: $clr_menu_note--1;
-                & h4{
+                h4{
                     @include Underline ($clr_menu_note--1);
                     &:hover{
                         background-size: 100% 100%;
                     }
                 }
-                & img{
+                img{
                     width: 30%;
                 }
             }
@@ -27,13 +27,12 @@
                 flex-wrap: wrap;
                 width:80%;
                 color: $clr_menu_note--1;
+                font-size:  1.6rem;
                 .plat{
                     width:$taille;
-                    font-size: 1.6rem;
                 }
                 .prix{
                     width:20%;
-                    font-size: 1.6rem;
                     text-align: right;
                 }
             }
@@ -42,12 +41,12 @@
     &_footer{
         @include Center_elements;
         margin: 5%;      
-        & h3{
+        h3{
             font: normal 2.5rem $fnt-note--1;
             color: $clr_menu_note--1;
             padding-left: 2%;
         }
-        & img{
+        img{
             width: 7%;
             height:7%;
         }
