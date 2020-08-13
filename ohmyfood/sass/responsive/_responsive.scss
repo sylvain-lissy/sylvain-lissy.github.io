@@ -135,10 +135,10 @@
         }
     }
     @each $resto, $taille in
-    (note, 	2.5),
-    (chic,	1.5),
-    (delice,	2.2),
-    (palette,	2.2){
+                        (note, 2.5),
+                        (chic, 1.5),
+                        (delice, 2.2),
+                        (palette, 2.2){
         .menu_#{$resto}{
             &_main, &_contenu{
                 width:95%;   
