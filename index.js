@@ -11,7 +11,7 @@ xmlhttp.open("GET", url, true);
 xmlhttp.send();
 
 function myFunction(arr) {
-    console.log(myArr)
+    console.log(arr)
     // var out = "";
     // var i;
     // for(i = 0; i < arr.length; i++) {
