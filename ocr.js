@@ -55,4 +55,3 @@ function tableauProjets(openclassrooms){
         mainProjet.appendChild(divProjet)
     })
 }
-)
