@@ -23,7 +23,7 @@ fetch("data.json")
 ////////////////////////////////////////////////////// FUNCTIONS //////////////////////////////////////////////////////
 // Fonction de création du tableau des teddies
 function tableauOC(openclassrooms){
-    console.log(openclassrooms.oc.id)
+    console.log(openclassrooms.oc)
     //const mainOpenclassrooms = document.getElementById("ocrHeader")
     // openclassrooms.forEach(ocrProjet => {
     //     const h3Openclassrooms = document.createElement("h3")
