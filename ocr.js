@@ -9,5 +9,6 @@ fetch ("data.json")
             h3OcrHeader.innerHTML = `${oc.oc.id}`
             ocrHeader.appendChild(h3OcrHeader)
         })
+        console.log(oc.id)
     })
     .catch(error => console.error(error))
