@@ -1,96 +1,96 @@
 [
   {
     "id": 5,
-    "titre": "Orinoco",
-    "status_titre": "En cours",
-    "status_class": "info",
-    "soustitre": "Construisez un site de e-commerce",
-    "compétence": [
+    "title": "Orinoco",
+    "status": "En cours",
+    "class": "info",
+    "text": "Construisez un site de e-commerce",
+    "work": [
       "Valider des données issues de sources externes",
       "Gérer des événements JavaScript",
       "Créer un plan de test pour une application",
       "Interagir avec un web service avec JavaScript"
     ],
-    "supplement": [
+    "more": [
       {
-        "lien": "https://docs.google.com/document/d/1T0KI6cK9UWz2BhgCgevy0ypdfmTCry8R6EUcL8eQ-t0/edit?usp=sharing",
+        "link": "https://docs.google.com/document/d/1T0KI6cK9UWz2BhgCgevy0ypdfmTCry8R6EUcL8eQ-t0/edit?usp=sharing",
         "text": "Plan de test à mettre en place"
       }
     ],
-    "langages": [
+    "lang": [
       "html5",
       "css3",
       "js",
       "bootstrap"
     ],
-    "liens": [
-      "lien 1",
-      "lien 2"
+    "link": [
+      "https://github.com/sylvain-lissy/Orinoco",
+      "https://sylvain-lissy.github.io/Orinoco/index.html"
     ]
   },
   {
     "id": 4,
-    "titre": "Chouette agence",
-    "status_titre": "Validé",
-    "status_class": "success",
-    "soustitre": "Optimisez un site web existant",
-    "compétence": [
+    "title": "Chouette agence",
+    "status": "Validé",
+    "class": "success",
+    "text": "Optimisez un site web existant",
+    "work": [
       "Écrire un code HTML et CSS maintenable",
       "Assurer l'accessibilité d'un site web",
       "Optimiser la taille et la vitesse d’un site web",
       "Réaliser une recherche des bonnes pratiques en développement web",
       "Optimiser le référencement d'un site web"
     ],
-    "supplement": [
+    "more": [
       {
-        "lien": "https://sylvain-lissy.github.io/rapport-chouette/index.html",
+        "link": "https://sylvain-lissy.github.io/rapport-chouette/index.html",
         "text": "Rapport d'analyses et performances"
       }
     ],
-    "langages": [
+    "lang": [
       "html5",
       "css3",
       "bootstrap"
     ],
-    "liens": [
-      "lien 1",
-      "lien 2"
+    "link": [
+      "https://github.com/sylvain-lissy/chouette-agence",
+      "https://sylvain-lissy.github.io/chouette-agence/index.html"
     ]
   },
   {
     "id": 3,
-    "titre": "Oh my food",
-    "status_titre": "Validé",
-    "status_class": "success",
-    "soustitre": "Dynamisez une page web avec des animations CSS",
-    "compétence": [
+    "title": "Oh my food",
+    "status": "Validé",
+    "class": "success",
+    "text": "Dynamisez une page web avec des animations CSS",
+    "work": [
       "Mettre en œuvre des effets CSS graphiques avancés",
       "Assurer la cohérence graphique d'un site web",
       "Mettre en place une structure de navigation pour un site web"
     ],
-    "supplement": [
+    "more": [
       {
-        "lien": "",
+        "link": "",
         "text": ""
       }
     ],
-    "langages": [
+    "lang": [
       "html5",
       "css3",
       "sass"
     ],
-    "liens": [
-      "lien 1",
-      "lien 2"
+    "link": [
+      "https://github.com/sylvain-lissy/sylvain-lissy.github.io/tree/master/ohmyfood",
+      "https://sylvain-lissy.github.io/ohmyfood/index.html"
     ]
   },
   {
     "id": 2,
-    "titre": "Web CV",
-    "status_titre": "Validé",
-    "status_class": "success",
-    "soustitre": "Transformez une maquette en site web",
-    "compétence": [
+    "title": "Web CV",
+    "status": "Validé",
+    "class": "success",
+    "text": "Transformez une maquette en site web",
+    "work": [
       "Intégrer du contenu conformément à une maquette",
       "Préparer des éléments graphiques et textuels à intégrer à une page web",
       "Adapter l'affichage d'un site web à des écrans de petite taille",
@@ -98,19 +98,19 @@
       "Définir la structure d'une page web à partir d'une maquette",
       "Assurer la conformité d'une page web aux standards HTML et CSS"
     ],
-    "supplement": [
+    "more": [
       {
-        "lien": "",
+        "link": "",
         "text": ""
       }
     ],
-    "langages": [
+    "lang": [
       "html5",
       "css3"
     ],
-    "liens": [
-      "lien 1",
-      "lien 2"
+    "link": [
+      "https://github.com/sylvain-lissy/sylvain-lissy.github.io/tree/master/cv-sylvain-lissy",
+      "https://sylvain-lissy.github.io/cv-sylvain-lissy/index.html"
     ]
   }
 ]
