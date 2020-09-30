@@ -10,7 +10,7 @@ fetch("data.json")
 
 // Fonction de création du tableau des teddies
 function tableauProjets(openclassrooms){
-    const mainProjet = document.getElementById("teddies_list")
+    const mainProjet = document.getElementById("listeProjets")
     openclassrooms.forEach(projet => {
         const divProjet = document.createElement("div")
         divProjet.classList.add("col-12", "col-md-6", "col-lg-4", "mb-3")
