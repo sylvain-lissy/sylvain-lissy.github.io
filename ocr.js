@@ -50,7 +50,7 @@ function tableauProjets(openclassrooms){
 }
 //Fonction tableau compétences
 function listeCompetences(openclassrooms){
-        const listWorks = openclassrooms.works
+        const listWorks = openclassrooms.work
         const listWork = document.getElementById("listeWorks")
         listWorks.forEach(work => {
             const liWork = document.createElement("li")
