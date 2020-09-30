@@ -2,7 +2,6 @@ fetch("data.json")
     .then(openclassrooms => openclassrooms.json())
     .then(openclassrooms => {
         tableauProjets(openclassrooms)
-        listeCompetences(openclassrooms)
     })
 
 // Fonction de création du tableau des teddies  // &#x5c;
@@ -44,7 +43,6 @@ function tableauProjets(openclassrooms){
                 </div>
             </div>
         </div>`
-        mainProjet.appendChild(divProjet)
         //Fonction tableau compétences
         const listing = projet.work
         const listeWorks = document.getElementById("listeWorks")
@@ -53,7 +51,8 @@ function tableauProjets(openclassrooms){
             liWork.classList.add("small")
             liWork.innerHTML = work
             listeWorks.appendChild(liWork)
-        })  
+        }  
+        mainProjet.appendChild(divProjet)
     })
 }
-
+)
