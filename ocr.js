@@ -51,7 +51,7 @@ function tableauProjets(openclassrooms){
             liWork.classList.add("small")
             liWork.innerHTML = work
             listeWorks.appendChild(liWork)
-        }  
+        })  
         mainProjet.appendChild(divProjet)
     })
 }
