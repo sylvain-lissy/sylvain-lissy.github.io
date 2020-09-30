@@ -6,7 +6,7 @@ fetch("data.json")
             tableauProjets(openclassrooms)
         })
     })
-    .catch(error => console.error(error))
+    //.catch(error => console.error(error))
 
 // Fonction de création du tableau des teddies
 function tableauProjets(openclassrooms){
@@ -38,10 +38,10 @@ function tableauProjets(openclassrooms){
             <div class="card-footer">
                 <div class="row">
                     <div class="col-6">
-                        <a href="${projet.lien[0]}" class="btn btn-primary btn-sm btn-block">Projet sur Git</a> 
+                        <a href="${projet.liens[0]}" class="btn btn-primary btn-sm btn-block">Projet sur Git</a> 
                     </div>
                     <div class="col-6">
-                        <a href="${projet.lien[1]}" class="btn btn-primary btn-sm btn-block">Page du site</a>
+                        <a href="${projet.liens[1]}" class="btn btn-primary btn-sm btn-block">Page du site</a>
                     </div>
                 </div>
             </div>
