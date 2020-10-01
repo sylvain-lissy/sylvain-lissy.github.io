@@ -46,7 +46,7 @@ function tableauProjets(openclassrooms){
         </div>`
         mainProjet.appendChild(divProjet)
         //Fonction tableau compétences
-        const listeWorks = document.getElementByClassName("listeWorks")
+        const listeWorks = document.getElementsByClassName("listeWorks")
         for (i=0; i < listing.length; i++){
             const liWork = document.createElement("li")
             liWork.classList.add("small")
