@@ -1,4 +1,4 @@
-fetch("data.json")
+fetch("ocr.json")
     .then(openclassrooms => openclassrooms.json())
     .then(openclassrooms => {
         tableauProjets(openclassrooms)
