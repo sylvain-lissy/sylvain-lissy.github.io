@@ -8,6 +8,7 @@ fetch("data.json")
 function tableauProjets(openclassrooms){
     const mainProjet = document.getElementById("listeProjets")
     openclassrooms.forEach(projet => {
+        pId= projet.id
         const divProjet = document.createElement("div")
         divProjet.classList.add("col-12", "col-md-6", "col-lg-4", "mb-3")
         divProjet.innerHTML = `            
@@ -18,7 +19,7 @@ function tableauProjets(openclassrooms){
         </div>
         <div class="card-body">
             <p class="h6 card-text">Compétences mises en avant:</p>
-            <ul id="listeWorks">
+            <ul class="listeWork" id="${projet.id}">
             </ul>
             <p class="h6">Ressources supplémentaires:</p>
             <ul>
@@ -45,12 +46,11 @@ function tableauProjets(openclassrooms){
         </div>`
         mainProjet.appendChild(divProjet)
         //Fonction tableau compétences
-        const listing = projet.work
-        const listeWorks = document.getElementById("listeWorks")
+        const listeWorks = document.getElementByClassName("listeWorks")
         for (i=0; i < listing.length; i++){
             const liWork = document.createElement("li")
             liWork.classList.add("small")
-            liWork.innerHTML = listing[i]
+            liWork.innerHTML = projet[pId].work[i]
             listeWorks.appendChild(liWork)
         }
                    
