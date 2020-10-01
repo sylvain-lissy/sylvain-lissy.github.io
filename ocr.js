@@ -19,13 +19,10 @@ function tableauProjets(openclassrooms){
         </div>
         <div class="card-body">
             <p class="h6 card-text">Compétences mises en avant:</p>
-            <ul class="listeWork" id="${projet.id}">
+            <ul id="work${projet.id}">
             </ul>
             <p class="h6">Ressources supplémentaires:</p>
-            <ul>
-                <li class="small">
-                    <a href="https://docs.google.com/document/d/1T0KI6cK9UWz2BhgCgevy0ypdfmTCry8R6EUcL8eQ-t0/edit?usp=sharing" class="text-primary ">Plan de test à mettre en place</a> 
-                </li>
+            <ul id="more${projet.id}">
             </ul> 
             <div class="row m-0 p-0 justify-content-center">
                 <div class="m-1 p-0"><img src="images/html5.png" height="32"></div>
@@ -46,16 +43,22 @@ function tableauProjets(openclassrooms){
         </div>`
         mainProjet.appendChild(divProjet)
         //Fonction tableau compétences
-
-        const listeWorks = document.getElementsByClassName("listeWorks")
         for (i=0; i < projet.work.length; i++){
-            const listing = document.getElementById(pId)
+            const listing = document.getElementById("work"+pId)
             const liWork = document.createElement("li")
             liWork.classList.add("small")
             liWork.innerHTML = projet.work[i]
             listing.appendChild(liWork)
         }
-                   
+        //Fonction ressource supplémentaires
+        for (i=0; i < projet.more.length; i++){
+            const listing = document.getElementById("more"+pId)
+            const liWork = document.createElement("li")
+            liWork.classList.add("small")
+            liWork.innerHTML = `
+                <a href="${projet.more.link[i]}" class="text-primary ">${projet.more.text[i]}</a> `
+            listing.appendChild(liWork)
+        }          
         
     })
 }
