@@ -43,15 +43,16 @@ function tableauProjets(openclassrooms){
                 </div>
             </div>
         </div>`
+        mainProjet.appendChild(divProjet)
         //Fonction tableau compétences
         const listing = projet.work
         const listeWorks = document.getElementById("listeWorks")
-        listing.forEach(work => {
+        for (i=0; i < listing.length; i++){
             const liWork = document.createElement("li")
             liWork.classList.add("small")
             liWork.innerHTML = work
             listeWorks.appendChild(liWork)
-        })  
-        mainProjet.appendChild(divProjet)
+        }
+        
     })
 }
