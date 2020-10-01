@@ -24,11 +24,7 @@ function tableauProjets(openclassrooms){
             <p class="h6">Ressources supplémentaires:</p>
             <ul id="more${projet.id}">
             </ul> 
-            <div class="row m-0 p-0 justify-content-center">
-                <div class="m-1 p-0"><img src="images/html5.png" height="32"></div>
-                <div class="m-1 p-0"><img src="images/css3.png" height="32"></div>
-                <div class="m-1 p-0"><img src="images/js.png" height="32"></div>
-                <div class="m-1 p-0"><img src="images/bootstrap.png" height="32"></div>
+            <div class="row m-0 p-0 justify-content-center" id="lang${projet.id}>
             </div>                           
         </div>
         <div class="card-footer">
@@ -52,16 +48,19 @@ function tableauProjets(openclassrooms){
         }
         //Fonction ressource supplémentaires
         for (i=0; i < projet.more.length; i++){
-            if (!projet.more){
-                break
-            }else{
-                const listing = document.getElementById("more"+pId)
-                const liWork = document.createElement("li")
-                liWork.classList.add("small")
-                liWork.innerHTML = `
-                    <a href="${projet.more[i].link}" class="text-primary ">${projet.more[i].text}</a> `
-                listing.appendChild(liWork)
-            }
+            const listing = document.getElementById("more"+pId)
+            const liWork = document.createElement("li")
+            liWork.classList.add("small")
+            liWork.innerHTML = `<a href="${projet.more[i].link}" class="text-primary ">${projet.more[i].text}</a> `
+            listing.appendChild(liWork)
+        }
+        //Fonction langages/framework
+        for (i=0; i < projet.lang.length; i++){
+            const listing = document.getElementById("lang"+pId)
+            const liWork = document.createElement("div")
+            liWork.classList.add("m1", "p-0")
+            liWork.innerHTML = `<img src="images/${projet.lang[i]}.png" height="32">`
+            listing.appendChild(liWork)
         }          
     })
 }
