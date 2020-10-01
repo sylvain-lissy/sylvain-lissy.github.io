@@ -56,7 +56,7 @@ function tableauProjets(openclassrooms){
             const liWork = document.createElement("li")
             liWork.classList.add("small")
             liWork.innerHTML = `
-                <a href="${projet.more.link[i]}" class="text-primary ">${projet.more.text[i]}</a> `
+                <a href="${projet.more[i].link}" class="text-primary ">${projet.more[i].text}</a> `
             listing.appendChild(liWork)
         }          
         
