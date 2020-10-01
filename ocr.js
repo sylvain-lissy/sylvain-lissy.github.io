@@ -53,7 +53,7 @@ function tableauProjets(openclassrooms){
             const liWork = document.createElement("li")
             liWork.classList.add("small")
             liWork.innerHTML = projet.work[i]
-            listeWorks.appendChild(liWork)
+            listing.appendChild(liWork)
         }
                    
         
