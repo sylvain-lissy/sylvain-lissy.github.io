@@ -24,7 +24,7 @@ function tableauProjets(openclassrooms){
             <p class="h6">Ressources supplémentaires:</p>
             <ul id="more${projet.id}">
             </ul> 
-            <div class="row m-0 p-0 justify-content-center" id="lang${projet.id}>
+            <div class="row m-0 p-0 justify-content-center" id="lang${projet.id}">
             </div>                           
         </div>
         <div class="card-footer">
