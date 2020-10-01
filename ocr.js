@@ -52,14 +52,16 @@ function tableauProjets(openclassrooms){
         }
         //Fonction ressource supplémentaires
         for (i=0; i < projet.more.length; i++){
-            if (!projet.more){break noMore}
-            const listing = document.getElementById("more"+pId)
-            const liWork = document.createElement("li")
-            liWork.classList.add("small")
-            liWork.innerHTML = `
-                <a href="${projet.more[i].link}" class="text-primary ">${projet.more[i].text}</a> `
-            listing.appendChild(liWork)
+            if (!projet.more){
+                break
+            }else{
+                const listing = document.getElementById("more"+pId)
+                const liWork = document.createElement("li")
+                liWork.classList.add("small")
+                liWork.innerHTML = `
+                    <a href="${projet.more[i].link}" class="text-primary ">${projet.more[i].text}</a> `
+                listing.appendChild(liWork)
+            }
         }          
-        noMore:
     })
 }
