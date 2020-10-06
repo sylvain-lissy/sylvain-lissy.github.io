@@ -1,0 +1,100 @@
+[
+    {
+        "id": 1,
+        "title": "Openclassrooms",
+        "status": "En cours",
+        "class": "info",
+        "text": "Formation développeur web",
+        "work": [
+            [
+                {
+                    "text":"Découvrir le quotidien d'un développeur web",
+                    "status":"Validé",
+                    "class":"success"
+                },
+                {
+                    "text":"Transformez une maquette en site web",
+                    "status":"Validé",
+                    "class":"success"
+                },
+                {
+                    "text":"Dynamisez une page web avec des animations CSS",
+                    "status":"Validé",
+                    "class":"success"
+                },
+                {
+                    "text":"Optimisez un site web existant",
+                    "status":"Validé",
+                    "class":"success"
+                },
+                {
+                    "text":"Construisez un site de e-commerce",
+                    "status":"En cours",
+                    "class":"info"
+                },
+                {
+                    "text":"Construisez une API sécurisée pour une application d'avis gastronomique",
+                    "status":"A faire",
+                    "class":"secondary"
+                },
+                {
+                    "text":"Créez un réseau social d'entreprise",
+                    "status":"A faire",
+                    "class":"secondary"
+                }
+            ]
+        ],
+        "lang": [
+            "html5",
+            "css3",
+            "sass",
+            "js",
+            "bootstrap",
+            "github"
+        ],
+        "link": [
+            "https://github.com/sylvain-lissy/",
+            "ocr.html"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Projets personnel",
+        "status": "En cours",
+        "class": "info",
+        "text": "Optimisez un site web existant",
+        "work": [
+            [
+                {
+                    "text":"S'incrire comme auto-entrepreneur",
+                    "status":"A faire",
+                    "class":"secondary"
+                },
+                {
+                    "text":"Se créer un réseau",
+                    "status":"A faire",
+                    "class":"secondary"
+                },
+                {
+                    "text":"Malt, lacremedelacreme, linkedin",
+                    "status":"A faire",
+                    "class":"secondary"
+                },
+                {
+                    "text":"Trouver un hébergeur + nom de domaine",
+                    "status":"A faire",
+                    "class":"secondary"
+                },
+                {
+                    "text":"Créer mon site",
+                    "status":"A faire",
+                    "class":"secondary"
+                }
+            ]
+        ],
+        "lang": [
+        ],
+        "link": [
+        ]
+    }
+]

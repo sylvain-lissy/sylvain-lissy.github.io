@@ -1,4 +1,4 @@
-fetch("ocr.json")
+fetch("http://127.0.0.1:5500/ocr.json")
     .then(openclassrooms => openclassrooms.json())
     .then(openclassrooms => {
         tableauProjets(openclassrooms)
