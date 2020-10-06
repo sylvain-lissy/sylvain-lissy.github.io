@@ -1,5 +1,28 @@
 [
   {
+    "id": 6,
+    "title": "So Peckoko",
+    "status": "En cours",
+    "class": "info",
+    "text": "Construisez une API sécurisée pour une application d'avis gastronomiques",
+    "work": [
+      "Implémenter un modèle logique de données conformément à la réglementation",
+      "Stocker des données de manière sécurisée",
+      "Mettre en œuvre des opérations CRUD de manière sécurisée"
+    ],
+    "more": [
+    ],
+    "lang": [
+      "js",
+      "node",
+      "mongo"
+    ],
+    "link": [
+      "https://github.com/sylvain-lissy/Piquante",
+      "https://sylvain-lissy.github.io/Piquante"
+    ]
+  },
+  {
     "id": 5,
     "title": "Orinoco",
     "status": "En cours",
