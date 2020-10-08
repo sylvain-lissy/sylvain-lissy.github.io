@@ -34,7 +34,7 @@
                 },
                 {
                     "text":"Construisez une API sécurisée pour une application d'avis gastronomique",
-                    "status":"A faire",
+                    "status":"En Cours",
                     "class":"secondary"
                 },
                 {
@@ -50,7 +50,9 @@
             "sass",
             "js",
             "bootstrap",
-            "github"
+            "github",
+            "node",
+            "mongo"
         ],
         "link": [
             "https://github.com/sylvain-lissy/",
@@ -67,8 +69,8 @@
             [
                 {
                     "text":"S'incrire comme auto-entrepreneur",
-                    "status":"A faire",
-                    "class":"secondary"
+                    "status":"En cours",
+                    "class":"info"
                 },
                 {
                     "text":"Se créer un réseau",
