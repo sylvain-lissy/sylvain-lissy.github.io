@@ -1,5 +1,33 @@
 [
   {
+    "projetId": 7,
+    "title": "Groupomania",
+    "status": "En cours",
+    "class": "info",
+    "text": "Créez un réseau social d'entreprise",
+    "work": [
+      "Authentifier un utilisateur et maintenir sa session",
+      "Implémenter un stockage de données sécurisé en utilisant SQL",
+      "Gérer un stockage de données à l'aide de SQL",
+      "Personnaliser le contenu envoyé à un client web"
+    ],
+    "more": [
+    ],
+    "lang": [
+      "html5",
+      "css3",
+      "sass",
+      "js",
+      "node",
+      "vue",
+      "sql"
+    ],
+    "link": [
+      "https://github.com/sylvain-lissy/Groupomania",
+      "https://sylvain-lissy.github.io/Groupomania"
+    ]
+  },
+  {
     "projetId": 6,
     "title": "So Peckoko",
     "status": "En cours",
