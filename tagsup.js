@@ -20,7 +20,8 @@ function percent(langs) {
     for (const lang in langs) {
         //création des bars de progression de chaque langages
         arrLang = `${(langs[lang] * 100) / valeurtotale}`.split('.')
-        arrVal = arrLang[0] + "." + arrLang[1].slice(0, 2)
+        //console.log(arrLang)
+        arrVal = arrLang[0] //+ "." + arrLang[1].slice(0, 2)
         const langWeb = document.getElementById("langWeb")
         const addLang = document.createElement("div")
         switch (lang) {
