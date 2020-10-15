@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Sylvain LISSY</title>
   </head>
   <body>
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-12 col-md-3 mb-3">
+                <div class="col-12 col-md-4 mb-3">
                     <div class="card mb-4 mb-lg-0 border-dark shadow h-100">
                         <div class="card-header">
                             <h3 class="card-title h5">Information du projet</h3>
@@ -81,12 +81,17 @@
                             <ul><li class="small"><a class="mb-1 mr-1 text-primary" href="https://github.com/sylvain-lissy/Tags_Up">Projet sur Github</a></li></ul>
                             <p class="h6 card-text">Avancement:</p>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%"></div>
+                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%"></div>
                             </div>
+                            <p class="h6 card-text">Langages:</p>
+                            <div class="progress" id="langWeb"><!--progressbar--></div>
+                            <div class="row m-0 mb-3 p-0" id="legendWeb"><!--légende--></div>
+                            <p class="h6 card-text" id="cDate">Crée le :</p>
+                            <p class="h6 card-text" id="uDate">Dernière mise à jour le:</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-9 mb-3">
+                <div class="col-12 col-md-8 mb-3">
                     <div class="card mb-4 mb-lg-0 border-dark shadow h-100">
                         <div class="card-header">
                             <h3 class="card-title h5">Projet : Tags Up <span class="h6 badge badge-info">En Cours</span></h3>
@@ -151,6 +156,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
-        <!-- <script src="tagsup.js"></script> -->
+        <script src="tagsup.js"></script>
     </body>
 </html>
