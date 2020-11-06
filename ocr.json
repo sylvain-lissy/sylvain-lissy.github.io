@@ -30,8 +30,8 @@
   {
     "projetId": 6,
     "title": "So Peckoko",
-    "status": "En cours",
-    "class": "info",
+    "status": "Validé",
+    "class": "success",
     "text": "Construisez une API sécurisée pour une application d'avis gastronomiques",
     "work": [
       "Implémenter un modèle logique de données conformément à la réglementation",
