@@ -2,8 +2,8 @@
   {
     "projetId": 7,
     "title": "Groupomania",
-    "status": "En cours",
-    "class": "info",
+    "status": "Validé",
+    "class": "success",
     "text": "Créez un réseau social d'entreprise",
     "work": [
       "Authentifier un utilisateur et maintenir sa session",
@@ -12,6 +12,10 @@
       "Personnaliser le contenu envoyé à un client web"
     ],
     "more": [
+      {
+        "link": "/supports/P7_01_soutenance.pdf",
+        "text": "Support de soutenance"
+      }
     ],
     "lang": [
       "html5",
@@ -39,6 +43,10 @@
       "Mettre en œuvre des opérations CRUD de manière sécurisée"
     ],
     "more": [
+      {
+        "link": "/supports/P6_01_soutenance.pdf",
+        "text": "Support de soutenance"
+      }
     ],
     "lang": [
       "js",
@@ -64,7 +72,11 @@
     ],
     "more": [
       {
-        "link": "https://docs.google.com/document/d/1T0KI6cK9UWz2BhgCgevy0ypdfmTCry8R6EUcL8eQ-t0/edit?usp=sharing",
+        "link": "/supports/P5_01_soutenance.pdf",
+        "text": "Support de soutenance"
+      },
+      {
+        "link": "/supports/P5_02_plan_test.pdf",
         "text": "Plan de test à mettre en place"
       }
     ],
@@ -94,7 +106,15 @@
     ],
     "more": [
       {
-        "link": "https://sylvain-lissy.github.io/rapport-chouette/index.html",
+        "link": "/supports/P4_01_soutenance.pdf",
+        "text": "Support de soutenance"
+      },
+      {
+        "link": "/supports/P4_02_analyse.pdf",
+        "text": "Analyse SEO/Accessibilité/Performances"
+      },
+      {
+        "link": "/supports/P4_03_rapport.pdf",
         "text": "Rapport d'analyses et performances"
       }
     ],
@@ -120,6 +140,10 @@
       "Mettre en place une structure de navigation pour un site web"
     ],
     "more": [
+      {
+        "link": "/supports/P3_01_soutenance.pdf",
+        "text": "Support de soutenance"
+      }
     ],
     "lang": [
       "html5",
@@ -146,6 +170,10 @@
       "Assurer la conformité d'une page web aux standards HTML et CSS"
     ],
     "more": [
+      {
+        "link": "/supports/P2_01_soutenance.pdf",
+        "text": "Support de soutenance"
+      }
     ],
     "lang": [
       "html5",
@@ -154,6 +182,47 @@
     "link": [
       "https://github.com/sylvain-lissy/sylvain-lissy.github.io/tree/master/cv-sylvain-lissy",
       "https://sylvain-lissy.github.io/cv-sylvain-lissy/index.html"
+    ]
+  },
+  {
+    "projetId": 1,
+    "title": "Plan de formation",
+    "status": "Validé",
+    "class": "success",
+    "text": "Découvrez le quotidien d'un développeur web",
+    "work": [
+      "Mettre en place un tableau de bord de veille technologique",
+      "Sélectionner des sources pertinentes pour une veille technologique",
+      "Etablir un plan de formation",
+      "Définir un poste pertinent pour un développeur web"
+    ],
+    "more": [
+      {
+        "link": "/supports/P1_01_soutenance.pdf",
+        "text": "Support de soutenance"
+      },
+      {
+        "link": "/supports/P1_02_plan_apprentissage.pdf",
+        "text": "Plan d'apprentissage personnalisé"
+      },
+      {
+        "link": "/supports/P1_03_plan_formation.pdf",
+        "text": "Plan de formation"
+      },
+      {
+        "link": "/supports/P1_04_semaine_type.pdf",
+        "text": "Semaine type"
+      },
+      {
+        "link": "/supports/P1_05_offre_emploi.pdf",
+        "text": "Offre d'emploi"
+      }
+    ],
+    "lang": [
+    ],
+    "link": [
+      "https://github.com/sylvain-lissy/",
+      "https://sylvain-lissy.github.io/"
     ]
   }
 ]
